@@ -74,7 +74,7 @@ switch (_oper) do {
         private _timer = InA_Server_PilotAirframeTimers getOrDefault [_uid, serverTime];
         private _remaining = (ceil (((_timer - serverTime) max 60)/ 60));
 
-        InA_Server_PilotAirframeTimers set [_uid, (_timer + (30 * 60))];
+        InA_Server_PilotAirframeTimers set [_uid, (_timer + 1800)];
 
         private _msg = format ["Player [%1] (%2) grounding timer extended from %3 -> %4 minutes.", _name, _uid, _remaining, (_remaining + 30)];
         [_msg, "GROUNDED", true] call AW_fnc_log;
