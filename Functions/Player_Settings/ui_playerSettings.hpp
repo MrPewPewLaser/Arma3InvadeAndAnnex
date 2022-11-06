@@ -201,7 +201,7 @@ class InA_Player_Dialog {
 
         class RscSliderSway: RscXSliderH {
             idc = IDC_SWAY_SLD;
-            style = "0x400 + 0x10";
+            style = 1040;
             x = 0.4 * safezoneW + safezoneX;
             y = 0.582 * safezoneH + safezoneY;
             w = 0.2 * safezoneW;
@@ -230,7 +230,7 @@ class InA_Player_Dialog {
 
         class RscSliderAtt: RscXSliderH {
             idc = IDC_ATT_SLD;
-            style = "0x400 + 0x10";
+            style = 1040;
             x = 0.4 * safezoneW + safezoneX;
             y = 0.652 * safezoneH + safezoneY;
             w = 0.2 * safezoneW;
