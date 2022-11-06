@@ -2,30 +2,30 @@
 
 class Rsc_AW_HeaderText: RscText {
     font = "PuristaBold";
-    size = ((safezoneH * 0.01) * 2.5);
-    sizeEx = ((safezoneH * 0.01) * 2.5);
+    size = (safezoneH * 0.025);
+    sizeEx = (safezoneH * 0.025);
     x = UI_XPOSLL;
     w = 0.1 * safezoneW;
 };
 
 class Rsc_AW_NormalText: RscText {
     font = "PuristaMedium";
-    size = ((safezoneH * 0.01) * 2);
-    sizeEx = ((safezoneH * 0.01) * 2);
+    size = (safezoneH * 0.02);
+    sizeEx = (safezoneH * 0.02);
     x = UI_XPOSL;
     w = 0.1 * safezoneW;
 };
 
 class Rsc_AW_Checkbox: RscCheckbox {
-    w = 0.01 * safezoneW * 1.5;
-    h = 0.019 * safezoneH * 1.5;
+    w = 0.015 * safezoneW;
+    h = 0.0285 * safezoneH;
     onCheckedChanged = "_this call AW_fnc_playerSettings_onCheckboxChanged;";
 };
 
 class Rsc_AW_Button: RscButton {
     font = "PuristaMedium";
-    size = ((safezoneH * 0.01) * 2.5);
-    sizeEx = ((safezoneH * 0.01) * 2.5);
+    size = (safezoneH * 0.025);
+    sizeEx = (safezoneH * 0.025);
 };
 
 class InA_Player_Dialog {
@@ -57,7 +57,7 @@ class InA_Player_Dialog {
             style = "0x02";
             text = "Player settings";
             font = "RobotoCondensedBold";
-            sizeEx = ((safezoneH * 0.01) * 5);
+            sizeEx = (safezoneH * 0.05);
             x = 0.375 * safezoneW + safezoneX;
             y = 0.21 * safezoneH + safezoneY;
             w = 0.25 * safezoneW;

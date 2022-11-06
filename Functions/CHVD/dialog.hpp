@@ -108,16 +108,16 @@ class CHVD_rscButton
 	period=1.2;
 	periodFocus=1.2;
 	periodOver=1.2;
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	size="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
+	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
 	tooltipColorText[]={1,1,1,1};
 	tooltipColorBox[]={1,1,1,1};
 	tooltipColorShade[]={0,0,0,0.64999998};
 	font="PuristaLight";
 	class TextPos
 	{
-		left="0.25 * 			(			((safezoneW / safezoneH) min 1.2) * 0.025)";
-		top="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04) - 		(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))) * 0.5";
+		left="0.25 * (((safezoneW / safezoneH) min 1.2) * 0.025)";
+		top="(((((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04) - (((((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))) * 0.5";
 		right=0.0049999999;
 		bottom=0;
 	};
@@ -130,7 +130,7 @@ class CHVD_rscButton
 	};
 	class ShortcutPos
 	{
-		left="(6.25 * 			(			((safezoneW / safezoneH) min 1.2) * 0.025)) - 0.0275";
+		left="(6.25 * ( ((safezoneW / safezoneH) min 1.2) * 0.025)) - 0.0275";
 		top=0.0049999999;
 		w=0.022500001;
 		h=0.029999999;
@@ -185,8 +185,8 @@ class CHVD_rscText
 	shadow=0;
 	colorShadow[]={0,0,0,0.5};
 	font="PuristaMedium";
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
-	SizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	size="((((safezoneW / safezoneH) min 1.2) * 0.03332))";
+	SizeEx="((((safezoneW / safezoneH) min 1.2) * 0.03332))";
 	colorText[]={1,1,1,1};
 	colorBackground[]={0,0,0,0};
 	linespacing=1;
@@ -206,8 +206,8 @@ class CHVD_rscTextRight
 	shadow=0;
 	colorShadow[]={0,0,0,0.5};
 	font="PuristaMedium";
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
-	SizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	size="((((safezoneW / safezoneH) min 1.2) * 0.03332))";
+	SizeEx="((((safezoneW / safezoneH) min 1.2) * 0.03332))";
 	colorText[]={1,1,1,1};
 	colorBackground[]={0,0,0,0};
 	linespacing=1;
@@ -256,7 +256,7 @@ class CHVD_rscXListBox
 	colorActive[]={1,1,1,1};
 	colorDisabled[]={1,1,1,0.2};
 	font="PuristaMedium";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
 	soundSelect[]=
 	{
 		"\A3\ui_f\data\sound\RscListbox\soundSelect",
@@ -277,7 +277,7 @@ class CHVD_rscEdit
 	autocomplete = "";
 	font="PuristaMedium";
 	shadow=2;
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
 	colorBackground[]={0,0,0,1};
 	colorText[]={0.94999999,0.94999999,0.94999999,1};
 	colorDisabled[]={1,1,1,0.25};

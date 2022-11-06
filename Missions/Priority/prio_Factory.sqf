@@ -132,7 +132,7 @@ private _infSpawnCode = {
     _reinforceGroupamount = _reinforceGroupamount + 1;
     _reinforceGroup setGroupIdGlobal [format ['Prio-reinforce-infantry-%1', _reinforceGroupamount]];
 
-    private _randomspawnPosition = [position Factory, 0, (300 * 1.2), 1, 0, 0.4, 0, [], position Factory] call BIS_fnc_findSafePos;
+    private _randomspawnPosition = [position Factory, 0, 360, 1, 0, 0.4, 0, [], position Factory] call BIS_fnc_findSafePos;
     for "_i" from 1 to _totalspawnUnits do {
         _unit = selectRandom AW_OPFOR_units_array;
         _grpMember = _reinforceGroup createUnit [_unit, _randomspawnPosition, [], 0, "FORM"];
@@ -152,7 +152,7 @@ private _infSpawnCode = {
 private _vehSpawnCode = {
     params ["_reinforceGroupamount","_enemiesArray", "_numPlayersinAO"];
 
-    private _randomspawnPosition = [position Factory, 0, (300 * 1.2), 1, 0, 0.4, 0, [], position Factory] call BIS_fnc_findSafePos;
+    private _randomspawnPosition = [position Factory, 0, 360, 1, 0, 0.4, 0, [], position Factory] call BIS_fnc_findSafePos;
     private _veh = (selectRandom _vehicleTypes) createVehicle _randomspawnPosition;
     _veh call AW_fnc_vehicleCustomizationOpfor;
 

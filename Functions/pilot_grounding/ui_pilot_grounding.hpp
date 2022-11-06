@@ -26,7 +26,7 @@ class InA_PilotGrounding_Dialog {
             style = ST_CENTER;
             text = "Pilot grounding menu";
             font = "RobotoCondensedBold";
-            sizeEx = ((safezoneH * 0.01) * 4);
+            sizeEx = (safezoneH * 0.04);
             x = 0.38 * safezoneW + safezoneX;
             y = 0.185 * safezoneH + safezoneY;
             w = 0.24 * safezoneW;
@@ -40,7 +40,7 @@ class InA_PilotGrounding_Dialog {
             style = ST_LEFT;
             text = "Grounded pilots:";
             font = "RobotoCondensedBold";
-            sizeEx = ((safezoneH * 0.01) * 2.5);
+            sizeEx = (safezoneH * 0.025);
             x = 0.39 * safezoneW + safezoneX;
             y = 0.25 * safezoneH + safezoneY;
             w = 0.24 * safezoneW;
@@ -67,7 +67,7 @@ class InA_PilotGrounding_Dialog {
             idcLeft = -1;
             idcRight = -1;
             font = "PuristaBold";
-            sizeEx = ((safezoneH * 0.01) * 2);
+            sizeEx = (safezoneH * 0.02);
 
             class Items {
                 class Name {
@@ -105,7 +105,7 @@ class InA_PilotGrounding_Dialog {
             idcLeft = -1;
             idcRight = -1;
             font = "PuristaMedium";
-            sizeEx = ((safezoneH * 0.01) * 1.75);
+            sizeEx = ((safezoneH * 0.0175);
             onLBSelChanged = "_this call AW_fnc_pilot_grounding_onLBSelChanged;";
         };
 
@@ -114,7 +114,7 @@ class InA_PilotGrounding_Dialog {
             style = ST_CENTER + ST_VCENTER;
             text = "Extend timer";
             font = "PuristaBold";
-            sizeEx = ((safezoneH * 0.01) * 1.75);
+            sizeEx = (safezoneH * 0.0175);
             tooltip = "Extend grounding timer with 30 minutes";
             x = 0.385 * safezoneW + safezoneX;
             y = 0.465 * safezoneH + safezoneY;
@@ -128,7 +128,7 @@ class InA_PilotGrounding_Dialog {
             style = ST_CENTER + ST_VCENTER;
             text = "Reset timer";
             font = "PuristaBold";
-            sizeEx = ((safezoneH * 0.01) * 1.75);
+            sizeEx = (safezoneH * 0.0175);
             tooltip = "Reset grounding timers";
             x = 0.555 * safezoneW + safezoneX;
             y = 0.465 * safezoneH + safezoneY;
@@ -196,7 +196,7 @@ class InA_PilotGrounding_Dialog {
             style = ST_CENTER + ST_VCENTER;
             text = "Exit";
             font = "PuristaBold";
-            sizeEx = ((safezoneH * 0.01) * 2.25);
+            sizeEx = (safezoneH * 0.0225);
             x = 0.46 * safezoneW + safezoneX;
             y = 0.772 * safezoneH + safezoneY;
             w = 0.08 * safezoneW;
