@@ -11,7 +11,7 @@ private _howtoHint = "<t  size='1' shadow='1' shadowColor='#000000' align='cente
  //hint parseText (_PlugsTakenHint + _howtoHint);
 [parseText format ["<br />%1<br />%2", _PlugsTakenHint, _howtoHint], true, nil, 10, 1, 0.3] spawn BIS_fnc_textTiles;
 
-InA_Client_EarplugsAttenuation = ((profileNamespace getVariable ["InA_Client_EarplugsAttenuationPct", 20]) / 100);
+InA_Client_EarplugsAttenuation = ((profileNamespace getVariable ["InA_Client_EarplugsAttenuationPct", 20]) * 0.01);
 
 InA_EarplugsEhIdx = (findDisplay 46) displayAddEventHandler ["KeyDown", {
     params ["_displayOrControl", "_key", "_shift", "_ctrl", "_alt"];

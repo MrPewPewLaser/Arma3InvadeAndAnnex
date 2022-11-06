@@ -14,7 +14,7 @@ derp_revive_drawMedicIconsEhIdx = addMissionEventHandler ["Draw3D", {
         _pos set [2, 1.3];
 
         private _dist = (round (player distance _x));
-        private _alpha = (1 - (_dist / 1000));
+        private _alpha = (1 - (_dist * 0.001));
 
         drawIcon3D [
             "\A3\ui_f\data\igui\cfg\actions\heal_ca.paa",

@@ -14,7 +14,7 @@ private _newValue = ((round (_value / ATT_STEP)) * ATT_STEP);
 _ctrl sliderSetPosition _newValue;
 ctrlSetText [IDC_ATT_VALUE, format ["%1%2", _newValue, "%"]];
 
-InA_Client_EarplugsAttenuation = (_newValue / 100);
+InA_Client_EarplugsAttenuation = (_newValue * 0.01);
 
 if (!isNil "InA_EarplugsFitted" && {InA_EarplugsFitted}) then {
     0 fadeSound InA_Client_EarplugsAttenuation;
