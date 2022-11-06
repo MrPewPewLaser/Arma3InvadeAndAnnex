@@ -301,7 +301,7 @@ while {sleep 5; ((_mortars findIf {alive _x}) != -1)} do {
 
     private _knowledge = ((east knowsAbout _selectedTarget) max (independent knowsAbout _selectedTarget));
     private _accuracy = (parseNumber ((linearConversion [4, _knowledgeThreshold, _knowledge, 2, 25, true]) toFixed 1));
-    private _fireMissionPos = ([[[_targetPos, (_accuracy + (_accuracy / 2))]], [[_targetPos, (_accuracy / 2)]]] call BIS_fnc_randomPos);
+    private _fireMissionPos = ([[[_targetPos, (_accuracy + (_accuracy * 0.5))]], [[_targetPos, (_accuracy * 0.5)]]] call BIS_fnc_randomPos);
 
     private _spotObj = createVehicle [_spotType, _fireMissionPos, [], 0, "NONE"];
     private _shellETA = (((_activeMortars # 0) getArtilleryETA [_fireMissionPos, _mortarMag]) max 15);

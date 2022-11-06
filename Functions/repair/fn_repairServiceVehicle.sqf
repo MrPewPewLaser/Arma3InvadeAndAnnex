@@ -74,7 +74,7 @@ private _vehiclePylons = {
 
 // Setup timers
 private _hitPointTimer = 2;
-private _fuelFlow = (1 * 0.1);
+private _fuelFlow = 0.1;
 private _magTimer = 5;
 
 switch (true) do {
@@ -85,56 +85,56 @@ switch (true) do {
             (_vehicle isKindOf "APC_Tracked_02_base_F") ||
             (_vehicle isKindOf "APC_Tracked_03_base_F")
         ) then {
-            _fuelFlow = (1 / 20);
+            _fuelFlow = 0.05;
             _hitPointTimer = 4;
             _magTimer = 8;
         };
 
         if (_vehicle isKindOf "Tank") then {
             _hitPointTimer = 5;
-            _fuelFlow = (1 / 25);
+            _fuelFlow = 0.04;
             _magTimer = 10;
         };
     };
 
     case (_vehicle isKindOf "Air"): {
         _hitPointTimer = 10;
-        _fuelFlow = (1 / 60);
+        _fuelFlow = 0.016;
         _magTimer = 45;
 
         if (_vehicle isKindOf "VTOL_Base_F") then {
             _hitPointTimer = 2;
-            _fuelFlow = (1 * 0.1);
+            _fuelFlow = 0.1;
             _magTimer = 10;
 
             if ((_vehicle getVariable ["InA_AssetType", "NONE"]) == "CAS") then {
                 _hitPointTimer = 8;
-                _fuelFlow = (1 / 45);
+                _fuelFlow = 0.022;
                 _magTimer = 30;
             };
 
             if (_vehicle isKindOf "VTOL_01_armed_base_F") then {
                 _hitPointTimer = 10;
-                _fuelFlow = (1 / 60);
+                _fuelFlow = 0.166;
                 _magTimer = 45;
             };
         };
 
         if (_vehicle isKindOf "Helicopter") then {
             _hitPointTimer = 2;
-            _fuelFlow = (1 * 0.1);
+            _fuelFlow = 0.1;
             _magTimer = 10;
 
             if ((_vehicle getVariable ["InA_AssetType", "NONE"]) == "CAS") then {
                 _hitPointTimer = 6;
-                _fuelFlow = (1 / 30);
+                _fuelFlow = 0.033;
                 _magTimer = 30;
             };
         };
 
         if (_vehicle isKindOf "UAV") then {
             _hitPointTimer = 10;
-            _fuelFlow = (1 / 30);
+            _fuelFlow = 0.033;
             _magTimer = 60;
         };
     };

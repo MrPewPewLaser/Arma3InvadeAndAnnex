@@ -150,7 +150,7 @@ for "_i" from 1 to _buildingCount do {
 
         if (_forEachIndex >= 8) then {break};
         if (_unitCount >= _maxUnits) then {break};
-        if ((count (units _garrisongroup)) >= (ceil ((count _infbuildingpos) / 2))) then {break};
+        if ((count (units _garrisongroup)) >= (ceil ((count _infbuildingpos) * 0.5))) then {break};
     } forEach _infbuildingpos;
 
     _grpList pushBack _garrisongroup;

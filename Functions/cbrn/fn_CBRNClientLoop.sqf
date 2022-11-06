@@ -53,7 +53,7 @@ private _maxDamagePerInterval = ((1 / _lifeExpectancy) / _interval);
 
 private _ctrlWidth = 0.75;
 private _ctrlHeight = 0.05;
-private _xpos = ((safeZoneX + (safeZoneWAbs / 2 )) - (_ctrlWidth / 2));
+private _xpos = ((safeZoneX + (safeZoneWAbs * 0.5 )) - (_ctrlWidth * 0.5));
 
 disableSerialization;
 
@@ -84,11 +84,11 @@ while {(alive _unit) && {InA_Client_SideMissionUp && {((getPos (vehicle _unit)) 
     private _hasOxy = (_hasTank && _hasMask);
 
     if (!_hasEyeProt && !_hasSuit) then {
-        _compoundDamage = (_compoundDamage + (_maxDamagePerInterval / 2));
+        _compoundDamage = (_compoundDamage + (_maxDamagePerInterval * 0.5));
     };
 
     if (!_hasBreathProt && !_hasOxy) then {
-        _compoundDamage = (_compoundDamage + (_maxDamagePerInterval / 2));
+        _compoundDamage = (_compoundDamage + (_maxDamagePerInterval * 0.5));
     };
 
     private _threatDistance = ((getPos _unit) distance _threatPos);
