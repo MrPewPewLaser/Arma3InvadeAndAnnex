@@ -108,8 +108,8 @@ class CHVD_rscButton
 	period=1.2;
 	periodFocus=1.2;
 	periodOver=1.2;
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
+	size="(((safezoneW / safezoneH) min 1.2) * 0.03532))";
+	sizeEx="(((safezoneW / safezoneH) min 1.2) * 0.03532))";
 	tooltipColorText[]={1,1,1,1};
 	tooltipColorBox[]={1,1,1,1};
 	tooltipColorShade[]={0,0,0,0.64999998};
@@ -117,7 +117,7 @@ class CHVD_rscButton
 	class TextPos
 	{
 		left="0.25 * (((safezoneW / safezoneH) min 1.2) * 0.025)";
-		top="(((((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04) - (((((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))) * 0.5";
+		top="((((safezoneW / safezoneH) min 1.2) * 0.03532) - (((safezoneW / safezoneH) min 1.2) * 0.03532))) * 0.5";
 		right=0.0049999999;
 		bottom=0;
 	};
@@ -256,7 +256,7 @@ class CHVD_rscXListBox
 	colorActive[]={1,1,1,1};
 	colorDisabled[]={1,1,1,0.2};
 	font="PuristaMedium";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
+	sizeEx="((((safezoneW / safezoneH) min 1.2) * 0.03532))";
 	soundSelect[]=
 	{
 		"\A3\ui_f\data\sound\RscListbox\soundSelect",
@@ -273,11 +273,11 @@ class CHVD_rscXListBox
 class CHVD_rscEdit
 {
 	type=2;
-	style="0x01 + 0x40";
+	style=65;
 	autocomplete = "";
 	font="PuristaMedium";
 	shadow=2;
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) * 0.833) * 0.04))";
+	sizeEx="((((safezoneW / safezoneH) min 1.2) * 0.03532))";
 	colorBackground[]={0,0,0,1};
 	colorText[]={0.94999999,0.94999999,0.94999999,1};
 	colorDisabled[]={1,1,1,0.25};
