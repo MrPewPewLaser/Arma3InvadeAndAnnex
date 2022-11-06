@@ -86,9 +86,9 @@
 
 // Default grid
 #define GUI_GRID_WAbs			((safezoneW / safezoneH) min 1.2)
-#define GUI_GRID_HAbs			(GUI_GRID_WAbs / 1.2)
-#define GUI_GRID_W			(GUI_GRID_WAbs / 40)
-#define GUI_GRID_H			(GUI_GRID_HAbs / 25)
+#define GUI_GRID_HAbs			(GUI_GRID_WAbs * 0.833)
+#define GUI_GRID_W			(GUI_GRID_WAbs * 0.025)
+#define GUI_GRID_H			(GUI_GRID_HAbs * 0.04)
 #define GUI_GRID_X			(safezoneX)
 #define GUI_GRID_Y			(safezoneY + safezoneH - GUI_GRID_HAbs)
 
@@ -384,14 +384,14 @@ class RscShortcutButton
 	class ShortcutPos
 	{
 		left = 0;
-		top = ((GUI_GRID_HAbs / 20) - GUI_TEXT_SIZE_MEDIUM) / 2;
-		w = GUI_TEXT_SIZE_MEDIUM * (3/4);
+		top = ((GUI_GRID_HAbs * 0.05) - GUI_TEXT_SIZE_MEDIUM) * 0.5;
+		w = GUI_TEXT_SIZE_MEDIUM * 0.75;
 		h = GUI_TEXT_SIZE_MEDIUM;
 	};
 	class TextPos
 	{
-		left = GUI_TEXT_SIZE_MEDIUM * (3/4);
-		top = ((GUI_GRID_HAbs / 20) - GUI_TEXT_SIZE_MEDIUM) / 2;
+		left = GUI_TEXT_SIZE_MEDIUM * 0.75;
+		top = ((GUI_GRID_HAbs * 0.05) - GUI_TEXT_SIZE_MEDIUM) * 0.5;
 		right = 0.005;
 		bottom = 0;
 	};
@@ -1021,7 +1021,7 @@ class RscButtonMenu: RscShortcutButton
 	class TextPos
 	{
 		left = 0.25 * GUI_GRID_W;
-		top = (GUI_GRID_H - GUI_TEXT_SIZE_MEDIUM) / 2;
+		top = (GUI_GRID_H - GUI_TEXT_SIZE_MEDIUM) * 0.5;
 		right = 0.005;
 		bottom = 0;
 	};
@@ -1069,7 +1069,7 @@ class RscButtonMenuOK: RscButtonMenu
 	idc = 1;
 	shortcuts[] =
 	{
-		"0x00050000 + 0",
+		327680,
 		28,
 		57,
 		156
@@ -1088,7 +1088,7 @@ class RscButtonMenuCancel: RscButtonMenu
 	idc = 2;
 	shortcuts[] =
 	{
-		"0x00050000 + 1"
+		327681
 	};
 	text = "Cancel";
 };
@@ -1215,7 +1215,7 @@ class RscMapControl
 		color[] = {0.45,0.64,0.33,0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		size = 12;
-		importance = "0.9 * 16 * 0.05";
+		importance = 0.72;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1224,7 +1224,7 @@ class RscMapControl
 		color[] = {0.45,0.64,0.33,0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		size = 12;
-		importance = "0.6 * 12 * 0.05";
+		importance = 0.36;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1232,8 +1232,8 @@ class RscMapControl
 	{
 		color[] = {0.45,0.64,0.33,0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
-		size = "14/2";
-		importance = "0.2 * 14 * 0.05 * 0.05";
+		size = 7;
+		importance = 0.007;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1269,7 +1269,7 @@ class RscMapControl
 		color[] = {0.1,0.1,0.1,0.8};
 		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
 		size = 12;
-		importance = "0.5 * 12 * 0.05";
+		importance = 0.3;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1278,7 +1278,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		size = 14;
-		importance = "1.5 * 14 * 0.05";
+		importance = 1.05;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1287,7 +1287,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		size = 16;
-		importance = "2 * 16 * 0.05";
+		importance = 1.6;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1296,7 +1296,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
 		size = 11;
-		importance = "1 * 12 * 0.05";
+		importance = 0.6;
 		coefMin = 0.25;
 		coefMax = 4;
 	};
@@ -1305,7 +1305,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
 		size = 16;
-		importance = "2.5 * 16 * 0.05";
+		importance = 2;
 		coefMin = 0.5;
 		coefMax = 4;
 	};
@@ -1376,7 +1376,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
 		size = 16;
-		importance = "2 * 16 * 0.05";
+		importance = 1.6;
 		coefMin = 0.4;
 		coefMax = 2;
 	};
@@ -1385,7 +1385,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
 		size = 16;
-		importance = "1.2 * 16 * 0.05";
+		importance = 0.96;
 		coefMin = 1;
 		coefMax = 4;
 	};
@@ -1394,7 +1394,7 @@ class RscMapControl
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
 		size = 16;
-		importance = "1 * 16 * 0.05";
+		importance = 0.8;
 		coefMin = 0.7;
 		coefMax = 4;
 	};
