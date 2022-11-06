@@ -100,7 +100,7 @@ private _changeWeather = {
 
     60 setFog [_fogValue, _fogDecay, _fogBase];
 
-    if (_fogValue > (_fogLimitPct / 100)) then {
+    if (_fogValue > (_fogLimitPct * 0.01)) then {
         0 = [_fogValue, _fogDecay, _fogBase] spawn {
             params ["_fogValue", "_fogDecay", "_fogBase"];
 
@@ -173,7 +173,7 @@ private _getStats = {
 
     private _serverStats = format [
         "Server: [FPS: %1 / Groups: %2 (%3) / Units: %4 (%5)]",
-        ((round (diag_fps * 100.0)) / 100.0),
+        ((round (diag_fps * 100.0)) * 0.01.0),
         ({local _x} count allGroups),
         (count allGroups),
         ({local _x} count _allUnits),

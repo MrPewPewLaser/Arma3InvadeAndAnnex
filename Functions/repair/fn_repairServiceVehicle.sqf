@@ -74,7 +74,7 @@ private _vehiclePylons = {
 
 // Setup timers
 private _hitPointTimer = 2;
-private _fuelFlow = (1 / 10);
+private _fuelFlow = (1 * 0.1);
 private _magTimer = 5;
 
 switch (true) do {
@@ -104,7 +104,7 @@ switch (true) do {
 
         if (_vehicle isKindOf "VTOL_Base_F") then {
             _hitPointTimer = 2;
-            _fuelFlow = (1 / 10);
+            _fuelFlow = (1 * 0.1);
             _magTimer = 10;
 
             if ((_vehicle getVariable ["InA_AssetType", "NONE"]) == "CAS") then {
@@ -122,7 +122,7 @@ switch (true) do {
 
         if (_vehicle isKindOf "Helicopter") then {
             _hitPointTimer = 2;
-            _fuelFlow = (1 / 10);
+            _fuelFlow = (1 * 0.1);
             _magTimer = 10;
 
             if ((_vehicle getVariable ["InA_AssetType", "NONE"]) == "CAS") then {

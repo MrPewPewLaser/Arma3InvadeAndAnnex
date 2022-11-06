@@ -16,7 +16,7 @@ addMissionEventHandler ["Draw3D", {
         _pos set [2, 0.2];
 
         private _dist = (round (player distance _x));
-        private _alpha = (1 - (_dist / 1000));
+        private _alpha = (1 - (_dist * 0.001));
 
         drawIcon3D [
             "a3\ui_f\data\igui\cfg\revive\overlayiconsgroup\u100_ca.paa",

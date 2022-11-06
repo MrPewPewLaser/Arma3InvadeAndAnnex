@@ -67,7 +67,7 @@ if (InA_Client_AimingCoefSetting != 1) then {
 };
 
 if (isNil "InA_Client_EarplugsAttenuation") then {
-    InA_Client_EarplugsAttenuation = ((profileNamespace getVariable ["InA_Client_EarplugsAttenuationPct", 20]) / 100);
+    InA_Client_EarplugsAttenuation = ((profileNamespace getVariable ["InA_Client_EarplugsAttenuationPct", 20]) * 0.01);
 };
 
 sliderSetRange [IDC_ATT_SLD, ATT_MIN, ATT_MAX];

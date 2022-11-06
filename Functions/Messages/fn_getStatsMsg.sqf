@@ -8,7 +8,7 @@ private _allGroups = allGroups;
 
 private _hcStats = format [
     "FPS: %1 / Groups: %2 (%3) / Units: %4 (%5)",
-    ((round (diag_fps * 100.0)) / 100.0),
+    ((round (diag_fps * 100.0)) * 0.01.0),
     ({local _x} count _allGroups),
     (count _allGroups),
     ({local _x} count _allUnits),

@@ -72,7 +72,7 @@ if ("derp_revive" in (getMissionConfigValue "respawnTemplates")) then {
 InA_Client_AimingCoefSetting = (["PlayerAimingCoefSetting", -1] call BIS_fnc_getParamValue);
 
 if (InA_Client_AimingCoefSetting != -1) then {
-    InA_Client_AimingCoef = ((([(["PlayerAimingCoef", 100] call BIS_fnc_getParamValue), (profileNamespace getVariable ["InA_Client_AimingCoefPct", 100])] select InA_Client_AimingCoefSetting) max 25) / 100);
+    InA_Client_AimingCoef = ((([(["PlayerAimingCoef", 100] call BIS_fnc_getParamValue), (profileNamespace getVariable ["InA_Client_AimingCoefPct", 100])] select InA_Client_AimingCoefSetting) max 25) * 0.01);
 
     // Don't try and cheat the limits by setting the variable lower
     InA_Client_AimingCoef = (InA_Client_AimingCoef max 0.25);

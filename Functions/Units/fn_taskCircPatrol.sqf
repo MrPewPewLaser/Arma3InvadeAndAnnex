@@ -61,7 +61,7 @@ if (!isNil "_speed") then {
 
 // Create a circular waypoints.
 private _waypoint = [];
-private _randDist = floor (_maxDist / 10);
+private _randDist = floor (_maxDist * 0.1);
 
 if (isNull (objectParent (leader _group))) then {
     /* Case groupleader is on foot */

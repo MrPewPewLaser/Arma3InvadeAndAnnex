@@ -23,8 +23,8 @@ if (InA_Server_AISkillsFromServer) exitWith {};
 private _randomizeSkill = {
     params ["_base", "_boostPct", "_rndPct"];
 
-    private _skill = ((_base + (_base * (_boostPct / 100))) min 1);
-    private _skillDiff = (_skill * (_rndPct / 100));
+    private _skill = ((_base + (_base * (_boostPct * 0.01))) min 1);
+    private _skillDiff = (_skill * (_rndPct * 0.01));
     private _skillFloor = (_skill - (_skillDiff / 2));
 
     private _skillFinal = ((parseNumber ((_skillFloor + (random _skillDiff)) toFixed 2)) min 1);
@@ -66,15 +66,15 @@ if (isNil "AISkills_sanitizeInput") then {
 };
 
 
-private _general        = (("AIGeneralSkill" call BIS_fnc_getParamValue) / 10);
-private _aimingAccuracy = (("AIAimingAccuracy" call BIS_fnc_getParamValue) / 10);
-private _aimingShake    = (("AIAimingShake" call BIS_fnc_getParamValue) / 10);
-private _aimingSpeed    = (("AIAimingSpeed" call BIS_fnc_getParamValue) / 10);
-private _spotDistance   = (("AISpottingDistance" call BIS_fnc_getParamValue) / 10);
-private _spotTime       = (("AISpottingSpeed" call BIS_fnc_getParamValue) / 10);
-private _courage        = (("AICourage" call BIS_fnc_getParamValue) / 10);
-private _reloadSpeed    = (("AIReloadSpeed" call BIS_fnc_getParamValue) / 10);
-private _commanding     = (("AICommandingSkill" call BIS_fnc_getParamValue) / 10);
+private _general        = (("AIGeneralSkill" call BIS_fnc_getParamValue) * 0.1);
+private _aimingAccuracy = (("AIAimingAccuracy" call BIS_fnc_getParamValue) * 0.1);
+private _aimingShake    = (("AIAimingShake" call BIS_fnc_getParamValue) * 0.1);
+private _aimingSpeed    = (("AIAimingSpeed" call BIS_fnc_getParamValue) * 0.1);
+private _spotDistance   = (("AISpottingDistance" call BIS_fnc_getParamValue) * 0.1);
+private _spotTime       = (("AISpottingSpeed" call BIS_fnc_getParamValue) * 0.1);
+private _courage        = (("AICourage" call BIS_fnc_getParamValue) * 0.1);
+private _reloadSpeed    = (("AIReloadSpeed" call BIS_fnc_getParamValue) * 0.1);
+private _commanding     = (("AICommandingSkill" call BIS_fnc_getParamValue) * 0.1);
 
 private _arrayFinal = [];
 
