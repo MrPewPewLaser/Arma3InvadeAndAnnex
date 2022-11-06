@@ -25,7 +25,7 @@ private _randomizeSkill = {
 
     private _skill = ((_base + (_base * (_boostPct * 0.01))) min 1);
     private _skillDiff = (_skill * (_rndPct * 0.01));
-    private _skillFloor = (_skill - (_skillDiff / 2));
+    private _skillFloor = (_skill - (_skillDiff * 0.5));
 
     private _skillFinal = ((parseNumber ((_skillFloor + (random _skillDiff)) toFixed 2)) min 1);
 

@@ -30,7 +30,7 @@ private _blacklistedPositions = [
 
 private _checksDone = false;
 private _minRange = InA_Server_MissionMinDistance;
-private _maxRange = (worldSize / 2);
+private _maxRange = (worldSize * 0.5);
 
 private _accepted = false;
 private _tries = 0;

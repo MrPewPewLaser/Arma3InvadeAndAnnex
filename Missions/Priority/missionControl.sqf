@@ -24,7 +24,7 @@ waitUntil {
 if (isNil "InA_PrevPrioObj") then {
     InA_PrevPrioObj = [];
 
-    private _prevCount = (ceil ((count InA_prioMissionList) / 2));
+    private _prevCount = (ceil ((count InA_prioMissionList) * 0.5));
 
     for [{_i = 0}, {_i < _prevCount}, {_i = (_i + 1)}] do {
         InA_PrevPrioObj set [_i, "#dummy#"];

@@ -23,9 +23,9 @@ private _jettype = ["#jets"] call AW_fnc_getUnitsFromHash;
 
 if (isNil "InA_JetSpawnPosArray") then {
     InA_JetSpawnPosArray = [
-        [(worldSize / 2), worldSize, 2000],             // Upper Middle
-        [-5000, (worldSize / 2), 2000],                 // Left Middle
-        [(worldSize + 2000), (worldSize / 2), 2000],    // Right Middle
+        [(worldSize * 0.5), worldSize, 2000],           // Upper Middle
+        [-5000, (worldSize * 0.5), 2000],               // Left Middle
+        [(worldSize + 2000), (worldSize * 0.5), 2000],  // Right Middle
         [0, worldSize, 2000],                           // Upper Left
         [worldSize, worldSize, 2000]                    // Upper Right
     ];

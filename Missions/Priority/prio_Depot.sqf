@@ -37,7 +37,7 @@ private _retask = {
                 deleteWaypoint ((waypoints _x) # 0);
             };
 
-            [_x, (getMarkerPos InA_Server_currentAO), nil, (800 / 2)] call AW_fnc_taskRndPatrol;
+            [_x, (getMarkerPos InA_Server_currentAO), nil, (400)] call AW_fnc_taskRndPatrol;
 
             _x setBehaviour "COMBAT";
             _x setCombatMode "RED";

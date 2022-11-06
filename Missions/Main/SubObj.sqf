@@ -16,7 +16,7 @@ if (isNil "InA_MainAOSubObjs") then {
 if (isNil "InA_MainAOPrevSubObj") then {
     InA_MainAOPrevSubObj = [];
 
-    private _prevCount = (ceil ((count InA_MainAOSubObjs) / 2));
+    private _prevCount = (ceil ((count InA_MainAOSubObjs) * 0.5));
 
     for [{_i = 0}, {_i < _prevCount}, {_i = (_i + 1)}] do {
         InA_MainAOPrevSubObj set [_i, "#dummy#"];

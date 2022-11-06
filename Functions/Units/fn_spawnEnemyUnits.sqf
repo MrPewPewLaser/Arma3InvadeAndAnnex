@@ -31,7 +31,7 @@ private _taskPatrol = {
         case "#rnd": {
             private _randomPos = [_pos, _patrolMin, (_patrolMin * 2), 4, 0, 0.4, 0, [], [_pos, [0,0]]] call BIS_fnc_findSafePos;
 
-            [_grp, _randomPos, _patrolMin, (_patrolMax / 2)] call AW_fnc_taskRndPatrol;
+            [_grp, _randomPos, _patrolMin, (_patrolMax * 0.5)] call AW_fnc_taskRndPatrol;
         };
 
         case "#circ": {
@@ -123,7 +123,7 @@ _infCountArray params [
 
     for "_i" from 1 to _count do {
         private _rng = (_patrolMin + (random _patrolMax));
-        private _randomPos = [_missionPos, _patrolMin, (_patrolMax / 2), 4, 0, 1, 0, [], [_missionPos, [0,0]]] call BIS_fnc_findSafePos;
+        private _randomPos = [_missionPos, _patrolMin, (_patrolMax * 0.5), 4, 0, 1, 0, [], [_missionPos, [0,0]]] call BIS_fnc_findSafePos;
         private _squadType = [_type, _factionHash] call AW_fnc_getUnitsFromHash;
         private _infGrp = [_squadType, _randomPos, nil, _side] call AW_fnc_spawnAIGroup;
 
@@ -153,10 +153,10 @@ _infCountArray params [
 ///  SNIPERS   ///
 //////////////////
 for "_i" from 1 to _sniperTeamsCount do {
-    private _randomPos = [_missionPos, (_patrolMax * 1.5), (_patrolMax / 2), 5] call BIS_fnc_findOverwatch;
+    private _randomPos = [_missionPos, (_patrolMax * 1.5), (_patrolMax * 0.5), 5] call BIS_fnc_findOverwatch;
 
     if ((_randomPos distance2D _missionPos) > (_patrolMax * 1.5)) then {
-        _randomPos = [_missionPos, (_patrolMax / 2), (_patrolMax * 1.5), 4, 0, 1, 0, [], [_missionPos, [0,0]]] call BIS_fnc_findSafePos;
+        _randomPos = [_missionPos, (_patrolMax * 0.5), (_patrolMax * 1.5), 4, 0, 1, 0, [], [_missionPos, [0,0]]] call BIS_fnc_findSafePos;
     };
 
     private _sniperTeamType = ["#sniper_teams", _factionHash] call AW_fnc_getUnitsFromHash;

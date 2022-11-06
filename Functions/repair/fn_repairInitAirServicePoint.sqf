@@ -82,8 +82,8 @@ if (!_overWater) then {
     if (_edgeTop) then {
         _padComposition append [
             ["VR_Area_01_circle_4_grey_F", 0, 0, 0],
-            ["RANDOM", -((_offset / 4) + (random (_offset / 2))), (_offset + (2 + (random 2))), (random 45), true],
-            ["RANDOM", ((_offset / 4) + (random (_offset / 2))), (_offset + (2 + (random 2))), (random 315), true]
+            ["RANDOM", -((_offset * 0.25) + (random (_offset * 0.5))), (_offset + (2 + (random 2))), (random 45), true],
+            ["RANDOM", ((_offset * 0.25) + (random (_offset * 0.5))), (_offset + (2 + (random 2))), (random 315), true]
         ];
     } else {
         _padComposition append [
@@ -94,15 +94,15 @@ if (!_overWater) then {
 
     if (_edgeLeft) then {
         _padComposition append [
-            ["RANDOM", -(_offset + (2 + (random 2))), ((_offset / 4) + (random (_offset / 2))), (random 225), true],
-            ["RANDOM", -(_offset + (2 + (random 2))), -((_offset / 4) + (random (_offset / 2))), (random 135), true]
+            ["RANDOM", -(_offset + (2 + (random 2))), ((_offset * 0.25) + (random (_offset * 0.5))), (random 225), true],
+            ["RANDOM", -(_offset + (2 + (random 2))), -((_offset * 0.25) + (random (_offset * 0.5))), (random 135), true]
         ];
     };
 
     if (_edgeRight) then {
         _padComposition append [
-            ["RANDOM", (_offset + (2 + (random 2))), -((_offset / 4) + (random (_offset / 2))), (random 90), true],
-            ["RANDOM", (_offset + (2 + (random 2))), ((_offset / 4) + (random (_offset / 2))), (random 270), true]
+            ["RANDOM", (_offset + (2 + (random 2))), -((_offset * 0.25) + (random (_offset * 0.5))), (random 90), true],
+            ["RANDOM", (_offset + (2 + (random 2))), ((_offset * 0.25) + (random (_offset * 0.5))), (random 270), true]
         ];
     };
 

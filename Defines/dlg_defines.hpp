@@ -94,7 +94,7 @@
 
 // Default text sizes
 #define GUI_TEXT_SIZE_SMALL		(GUI_GRID_H * 0.8)
-#define GUI_TEXT_SIZE_MEDIUM		(GUI_GRID_H * 1)
+#define GUI_TEXT_SIZE_MEDIUM		(GUI_GRID_H)
 #define GUI_TEXT_SIZE_LARGE		(GUI_GRID_H * 1.2)
 
 // Pixel grid
@@ -452,7 +452,7 @@ class RscShortcutButton
 	default = 0;
 	shadow = 1;
 	w = 0.183825;
-	h = (GUI_GRID_HAbs / 20);
+	h = (GUI_GRID_HAbs * 0.50);
 	textSecondary = "";
 	colorSecondary[] = {1,1,1,1};
 	colorFocusedSecondary[] = {1,1,1,1};
@@ -1036,8 +1036,8 @@ class RscButtonMenu: RscShortcutButton
 	{
 		left = 5.25 * GUI_GRID_W;
 		top = 0;
-		w = 1 * GUI_GRID_W;
-		h = 1 * GUI_GRID_H;
+		w = GUI_GRID_W;
+		h = GUI_GRID_H;
 	};
 	soundEnter[] =
 	{
@@ -1099,7 +1099,7 @@ class RscButtonMenuSteam: RscButtonMenu
 	class TextPos
 	{
 		left = 0.0325;
-		top = (GUI_GRID_H - GUI_TEXT_SIZE_MEDIUM) / 2;
+		top = (GUI_GRID_H - GUI_TEXT_SIZE_MEDIUM) * 0.5;
 		right = 0.005;
 		bottom = 0;
 	};

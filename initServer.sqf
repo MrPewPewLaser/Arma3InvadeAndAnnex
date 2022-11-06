@@ -38,15 +38,15 @@ InA_Server_fnc_getServerCmdPwd = {""};
 // Airframe limit over InA_Server_PilotAirframeLimitPeriod
 InA_Server_PilotAirframeLimit = 4;
 // Period over which InA_Server_PilotAirframeLimit will be counted
-InA_Server_PilotAirframeLimitPeriod = ((InA_Server_PilotAirframeLimit * 15) * 60);
+InA_Server_PilotAirframeLimitPeriod = (InA_Server_PilotAirframeLimit * 900);
 
 // Airframe limit over InA_Server_PilotAirframeLimitPeriodShort
 InA_Server_PilotAirframeLimitLow  = 3;
 // Period over which InA_Server_PilotAirframeLimitLow will be counted
-InA_Server_PilotAirframeLimitPeriodShort = ((InA_Server_PilotAirframeLimitLow * 10) * 60);
+InA_Server_PilotAirframeLimitPeriodShort = (InA_Server_PilotAirframeLimitLow * 600);
 
 // Period to ground a pilot
-InA_Server_PilotAirframeTimeout = (60 * 60);
+InA_Server_PilotAirframeTimeout = 3600;
 
 InA_Server_PilotAirframeTimers = createHashMap;
 InA_Server_PilotAirframeCounters = createHashMap;

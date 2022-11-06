@@ -7,7 +7,7 @@
 
 class CHVD_rscXSliderH
 {
-	style="0x400	+ 0x10";
+	style=1040;
 	shadow=0;
 	x=0;
 	y=0;
@@ -84,7 +84,7 @@ class CHVD_rscCheckbox
 class CHVD_rscButton
 {
 	type=16;
-	style="0x02 + 0xC0";
+	style=194;
 	default=0;
 	shadow=0;
 	x=0;
@@ -108,16 +108,16 @@ class CHVD_rscButton
 	period=1.2;
 	periodFocus=1.2;
 	periodOver=1.2;
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
 	tooltipColorText[]={1,1,1,1};
 	tooltipColorBox[]={1,1,1,1};
 	tooltipColorShade[]={0,0,0,0.64999998};
 	font="PuristaLight";
 	class TextPos
 	{
-		left="0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-		top="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - 		(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
+		left="0.25 * 			(			((safezoneW / safezoneH) min 1.2) * 0.025)";
+		top="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04) - 		(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))) * 0.5";
 		right=0.0049999999;
 		bottom=0;
 	};
@@ -130,7 +130,7 @@ class CHVD_rscButton
 	};
 	class ShortcutPos
 	{
-		left="(6.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) - 0.0225 - 0.005";
+		left="(6.25 * 			(			((safezoneW / safezoneH) min 1.2) * 0.025)) - 0.0275";
 		top=0.0049999999;
 		w=0.022500001;
 		h=0.029999999;
@@ -185,8 +185,8 @@ class CHVD_rscText
 	shadow=0;
 	colorShadow[]={0,0,0,0.5};
 	font="PuristaMedium";
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	SizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	SizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
 	colorText[]={1,1,1,1};
 	colorBackground[]={0,0,0,0};
 	linespacing=1;
@@ -206,8 +206,8 @@ class CHVD_rscTextRight
 	shadow=0;
 	colorShadow[]={0,0,0,0.5};
 	font="PuristaMedium";
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	SizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
+	SizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
 	colorText[]={1,1,1,1};
 	colorBackground[]={0,0,0,0};
 	linespacing=1;
@@ -243,7 +243,7 @@ class CHVD_rscFrame
 class CHVD_rscXListBox
 {
 	type = 42;
-	style="0x400 + 0x02 +	0x10";
+	style=1042;
 	shadow=2;
 	arrowEmpty="\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
 	arrowFull="\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
@@ -256,7 +256,7 @@ class CHVD_rscXListBox
 	colorActive[]={1,1,1,1};
 	colorDisabled[]={1,1,1,0.2};
 	font="PuristaMedium";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
 	soundSelect[]=
 	{
 		"\A3\ui_f\data\sound\RscListbox\soundSelect",
@@ -277,7 +277,7 @@ class CHVD_rscEdit
 	autocomplete = "";
 	font="PuristaMedium";
 	shadow=2;
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) * 0.04))";
 	colorBackground[]={0,0,0,1};
 	colorText[]={0.94999999,0.94999999,0.94999999,1};
 	colorDisabled[]={1,1,1,0.25};
@@ -321,7 +321,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 2 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 21 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class CHVD_carBGframe: CHVD_rscFrame
@@ -331,7 +331,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 8.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 21 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class CHVD_airBGframe: CHVD_rscFrame
@@ -341,7 +341,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 15 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 21 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class CHVD_rscTitle: CHVD_rscText
@@ -352,7 +352,7 @@ class CHVD_dialog
 			x = 9 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 0.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 22 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class CHVD_rscFootHeaderText: CHVD_rscText
@@ -363,7 +363,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 2 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {0.5,0,0,0};
 		};
 		class CHVD_rscFootViewText: CHVD_rscTextRight
@@ -374,7 +374,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 3.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootObjText: CHVD_rscTextRight
 		{
@@ -384,7 +384,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootTerrainText: CHVD_rscTextRight
 		{
@@ -394,7 +394,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 6.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarHeaderText: CHVD_rscText
 		{
@@ -404,7 +404,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 8.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {0.5,0,0,0};
 		};
 		class CHVD_rscCarSyncText: CHVD_rscTextRight
@@ -415,7 +415,7 @@ class CHVD_dialog
 			x = 17 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 8.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarViewText: CHVD_rscTextRight
 		{
@@ -425,7 +425,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 10 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirObjText: CHVD_rscTextRight
 		{
@@ -435,7 +435,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 18 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarTerrainText: CHVD_rscTextRight
 		{
@@ -445,7 +445,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 13 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootSyncText: CHVD_rscTextRight
 		{
@@ -455,7 +455,7 @@ class CHVD_dialog
 			x = 17 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 2 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirHeaderText: CHVD_rscText
 		{
@@ -465,7 +465,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 15 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 			colorBackground[] = {0.5,0,0,0};
 		};
 		class CHVD_rscAirViewText: CHVD_rscTextRight
@@ -476,7 +476,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 16.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirTerrainText: CHVD_rscTextRight
 		{
@@ -486,7 +486,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 19.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirSyncText: CHVD_rscTextRight
 		{
@@ -496,7 +496,7 @@ class CHVD_dialog
 			x = 17 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 15 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarObjText: CHVD_rscTextRight
 		{
@@ -506,7 +506,7 @@ class CHVD_dialog
 			x = 9.5 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 11.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 4.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 	};
 	class controls
@@ -520,7 +520,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 3.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootObjSlider: CHVD_rscXSliderH
 		{
@@ -531,7 +531,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarViewSlider: CHVD_rscXSliderH
 		{
@@ -542,7 +542,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 10 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarObjSlider: CHVD_rscXSliderH
 		{
@@ -553,7 +553,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 11.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirViewSlider: CHVD_rscXSliderH
 		{
@@ -564,7 +564,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 16.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirObjSlider: CHVD_rscXSliderH
 		{
@@ -575,7 +575,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 18 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootViewDistance: CHVD_rscEdit
 		{
@@ -586,7 +586,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 3.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootObjDistance: CHVD_rscEdit
 		{
@@ -597,7 +597,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarViewDistance: CHVD_rscEdit
 		{
@@ -608,7 +608,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 10 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscCarObjDistance: CHVD_rscEdit
 		{
@@ -619,7 +619,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 11.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirViewDistance: CHVD_rscEdit
 		{
@@ -630,7 +630,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 16.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscAirObjDistance: CHVD_rscEdit
 		{
@@ -641,7 +641,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 18 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscClose: CHVD_rscButton
 		{
@@ -652,7 +652,7 @@ class CHVD_dialog
 			x = 9 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 21.15 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 22 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_rscFootSyncCheckbox: CHVD_rscCheckbox
 		{
@@ -663,7 +663,7 @@ class CHVD_dialog
 			y = 1.88 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 1.45 * CHVD_GUI_GRID_W;
 			h = 1.25 * CHVD_GUI_GRID_H;
-			sizeEx = 0 * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * CHVD_GUI_GRID_H;
+			sizeEx = 0;
 		};
 		class CHVD_rscCarSyncCheckbox: CHVD_rscCheckbox
 		{
@@ -674,7 +674,7 @@ class CHVD_dialog
 			y = 8.39 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 1.45 * CHVD_GUI_GRID_W;
 			h = 1.25 * CHVD_GUI_GRID_H;
-			sizeEx = 0 * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * CHVD_GUI_GRID_H;
+			sizeEx = 0;
 		};
 		class CHVD_rscAirSyncCheckbox: CHVD_rscCheckbox
 		{
@@ -685,7 +685,7 @@ class CHVD_dialog
 			y = 14.85 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 1.45 * CHVD_GUI_GRID_W;
 			h = 1.25 * CHVD_GUI_GRID_H;
-			sizeEx = 0 * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * 	(0.04) * CHVD_GUI_GRID_H;
+			sizeEx = 0;
 		};
 		class CHVD_footTerrainListbox: CHVD_rscXListBox
 		{
@@ -694,7 +694,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 6.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_carTerrainListbox: CHVD_rscXListBox
 		{
@@ -703,7 +703,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 13 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_airTerrainListbox: CHVD_rscXListBox
 		{
@@ -712,7 +712,7 @@ class CHVD_dialog
 			x = 14 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 19.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 12.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_footTerrainEdit: CHVD_rscEdit
 		{
@@ -723,7 +723,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 6.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_carTerrainEdit: CHVD_rscEdit
 		{
@@ -734,7 +734,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 13 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 		class CHVD_airTerrainEdit: CHVD_rscEdit
 		{
@@ -745,7 +745,7 @@ class CHVD_dialog
 			x = 27 * CHVD_GUI_GRID_W + CHVD_GUI_GRID_X;
 			y = 19.5 * CHVD_GUI_GRID_H + CHVD_GUI_GRID_Y;
 			w = 3.5 * CHVD_GUI_GRID_W;
-			h = 1 * CHVD_GUI_GRID_H;
+			h = CHVD_GUI_GRID_H;
 		};
 	};
 };

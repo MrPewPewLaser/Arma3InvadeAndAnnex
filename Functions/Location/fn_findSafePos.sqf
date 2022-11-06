@@ -1,6 +1,6 @@
 params [
-    ["_center", [(worldSize / 2), (worldSize / 2)]],
-    ["_maxdistance", (worldSize / 2)],
+    ["_center", [(worldSize * 0.5), (worldSize * 0.5)]],
+    ["_maxdistance", (worldSize * 0.5)],
     ["_nearobj", 10],
     ["_gradient", 0.25],
     ["_blacklist", []],
