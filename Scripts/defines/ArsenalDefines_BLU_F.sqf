@@ -512,7 +512,7 @@ InA_AllowedArsenal_generalBackpacks = [
     // Engineer
     "MTP_engineer_01", "MTP_engineer_02",
     // Pointman
-    "MTP_pointman_01", "MTP_pointman_02",
+    "MTP_pointman_01", "MTP_pointman_02"
 ];
 
 

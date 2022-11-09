@@ -15,7 +15,7 @@ if (!hasInterface) then {
 };
 
 // Ares / Achilles / ZEN
-missionNamespace setVariable ["Ares_Allow_Zeus_To_Execute_Code", false, true];
+missionNamespace setVariable ["Ares_Allow_Zeus_To_Execute_Code", true, true];
 missionNamespace setVariable ["ZEN_disableCodeExecution", true, true];
 
 
@@ -24,9 +24,12 @@ missionNamespace setVariable ["ZEN_disableCodeExecution", true, true];
 
 
 //======================Zeus Modules
-InA_Server_coreStaffUIDs = [];
-InA_Server_staffUIDs = [];
-InA_Server_spartanUIDs = [];
+InA_Server_coreStaffUIDs = ["76561198112167326"];
+InA_Server_staffUIDs = ["76561198112167326"];
+InA_Server_spartanUIDs = ["76561198112167326"];
+
+
+InA_Server_spartanUIDs pushBackUnique "76561198112167326";
 
 InA_Server_fnc_getServerCmdPwd = {""};
 
@@ -74,7 +77,7 @@ adminLogged setVariable ["showNotification", false, true];
 
     switch (toLower worldName) do {
         case "altis": {
-            _factions = ["CSAT"];
+            _factions = ["Russia"];
         };
 
         case "cam_lao_nam": {
@@ -82,7 +85,7 @@ adminLogged setVariable ["showNotification", false, true];
         };
 
         default {
-            _factions = ["CSAT"];
+            _factions = ["Russia"];
         };
     };
 

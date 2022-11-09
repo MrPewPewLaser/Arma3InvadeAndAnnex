@@ -180,7 +180,7 @@ private _crew = ["#crews", _factionHash] call AW_fnc_getUnitsFromHash;
 // Patrols
 private _patrolDistance = 50;
 
-private _infGrps = ["#squads", 1.5, "#specop_squads", 0.75, "#teams", 1.5, "#specop_teams", 1, "#aa_teams", 1.25, "#at_teams", 1.25];
+private _infGrps = ["#squads", 1.5, "#teams", 1.5,"#aa_teams", 1.25, "#at_teams", 1.25];
 
 for [{_i = 0}, {_i < 4}, {_i = (_i + 1)}] do {
     private _randomPos = [_aaPos, 20 , 125, 5, 0, 0.4, 0, [], _aaPos] call BIS_fnc_findSafePos;

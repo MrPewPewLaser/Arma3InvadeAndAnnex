@@ -131,7 +131,7 @@ _hostageGroup setGroupIdGlobal [format ["SIDE-Hostages"]];
 //Hostage Guards
 private _guardTypes = [
     "#riflemen",
-    "#teamleaders",
+	"#demos",
     "#machinegunners",
     "#engineers",
     "#medics",
