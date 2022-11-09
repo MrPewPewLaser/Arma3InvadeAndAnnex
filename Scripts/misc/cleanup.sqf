@@ -173,7 +173,7 @@ private _getStats = {
 
     private _serverStats = format [
         "Server: [FPS: %1 / Groups: %2 (%3) / Units: %4 (%5)]",
-        ((round (diag_fps * 100.0)) * 0.01.0),
+        ((round (diag_fps * 100.0)) * 0.01),
         ({local _x} count allGroups),
         (count allGroups),
         ({local _x} count _allUnits),
