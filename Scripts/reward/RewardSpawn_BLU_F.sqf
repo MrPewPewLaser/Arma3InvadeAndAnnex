@@ -69,12 +69,6 @@ switch (_rewardId) do {
         [_vehicle, "CAS"] call AW_fnc_vehicleCustomization;
     };
 
-    // F/A-181 Black Wasp II (CAP)
-    case 111: {
-        _vehicle = CV("B_Plane_Fighter_01_F");
-
-        [_vehicle] call AW_fnc_vehicleCustomization;
-    };
 
     // F/A-181 Black Wasp II (Stealth)
     case 106: {
@@ -125,6 +119,47 @@ switch (_rewardId) do {
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
 
+    // F/A-181 Black Wasp II (CAP)
+    case 111: {
+        _vehicle = CV("B_Plane_Fighter_01_F");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // F-22A)
+    case 112: {
+        _vehicle = CV("rhsusf_f22");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // A-10A)
+    case 113: {
+        _vehicle = CV("RHS_A10");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // A-29 Super Tucano)
+    case 114: {
+        _vehicle = CV("RHSGREF_A29B_HIDF");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // Su-25)
+    case 115: {
+        _vehicle = CV("rhsgref_cdf_b_su25");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // MiG-29S)
+    case 116: {
+        _vehicle = CV("rhsgref_cdf_b_mig29s");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
 
     /**********************/
     /**** Attack Helis ****/
@@ -395,6 +430,40 @@ switch (_rewardId) do {
     /**** Tonks ****/
     /***************/
 
+    // T-140K Angara
+    case 601: {
+        _vehicle = CV("O_MBT_04_command_F");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // Enhanced M2A4 Slammer (Urban Purpose)
+    case 602: {
+        _vehicle = CV("B_MBT_01_TUSK_F");
+
+        for "_i" from 1 to 20 do {
+            _vehicle removeMagazineGlobal "200Rnd_762x51_Belt_Red";
+        };
+
+        _vehicle removeWeapon ("LMG_coax");
+
+        _vehicle addWeaponTurret ["HMG_127_MBT", [0]];
+
+        for "_i" from 1 to 4 do {
+            _vehicle addMagazineTurret ["500Rnd_127x99_mag_Tracer_Red", [0]];
+        };
+
+        _vehicle addMagazineTurret ["24Rnd_120mm_APFSDS_shells_Tracer_Red", [0]];
+        _vehicle addMagazineTurret ["12Rnd_120mm_HE_shells_Tracer_Red", [0]];
+        _vehicle addMagazineTurret ["12Rnd_120mm_HEAT_MP_T_Red", [0]];
+
+        for "_i" from 1 to 4 do {
+            _vehicle addMagazineTurret ["200Rnd_127x99_mag_Tracer_Red", [0,0]];
+        };
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
     // Enhanced T-100 Varsuk
     case 603: {
         _vehicle = CV("O_MBT_02_cannon_F");
@@ -417,6 +486,33 @@ switch (_rewardId) do {
 
         for "_i" from 1 to 2 do {
             _vehicle addMagazineTurret ["150Rnd_127x108_Ball", [0,0]];
+        };
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // Enhanced MBT-52 Kuma
+    case 604: {
+        _vehicle = CV("I_MBT_03_cannon_F");
+
+        for "_i" from 1 to 4 do {
+            _vehicle removeMagazineGlobal "200Rnd_762x51_Belt_Yellow";
+        };
+
+        _vehicle removeWeapon ("LMG_coax");
+
+        _vehicle addWeaponTurret ["HMG_127_MBT",[0]];
+
+        for "_i" from 1 to 4 do {
+            _vehicle addMagazineTurret ["500Rnd_127x99_mag_Tracer_Red", [0]];
+        };
+
+        _vehicle addMagazineTurret ["20Rnd_120mm_APFSDS_shells_Tracer_Yellow", [0]];
+        _vehicle addMagazineTurret ["14Rnd_120mm_HE_shells_Tracer_Yellow", [0]];
+        _vehicle addMagazineTurret ["12Rnd_120mm_HEAT_MP_T_Yellow", [0]];
+
+        for "_i" from 1 to 2 do {
+            _vehicle addMagazineTurret ["200Rnd_127x99_mag_Tracer_Yellow", [0,0]];
         };
 
         [_vehicle] call AW_fnc_vehicleCustomization;
@@ -474,63 +570,16 @@ switch (_rewardId) do {
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
 
-    // Enhanced MBT-52 Kuma
-    case 604: {
+    // T-100 Varsuk
+    case 607: {
+        _vehicle = CV("O_MBT_02_cannon_F");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+
+    // MBT-52 Kuma
+    case 609: {
         _vehicle = CV("I_MBT_03_cannon_F");
-
-        for "_i" from 1 to 4 do {
-            _vehicle removeMagazineGlobal "200Rnd_762x51_Belt_Yellow";
-        };
-
-        _vehicle removeWeapon ("LMG_coax");
-
-        _vehicle addWeaponTurret ["HMG_127_MBT",[0]];
-
-        for "_i" from 1 to 4 do {
-            _vehicle addMagazineTurret ["500Rnd_127x99_mag_Tracer_Red", [0]];
-        };
-
-        _vehicle addMagazineTurret ["20Rnd_120mm_APFSDS_shells_Tracer_Yellow", [0]];
-        _vehicle addMagazineTurret ["14Rnd_120mm_HE_shells_Tracer_Yellow", [0]];
-        _vehicle addMagazineTurret ["12Rnd_120mm_HEAT_MP_T_Yellow", [0]];
-
-        for "_i" from 1 to 2 do {
-            _vehicle addMagazineTurret ["200Rnd_127x99_mag_Tracer_Yellow", [0,0]];
-        };
-
-        [_vehicle] call AW_fnc_vehicleCustomization;
-    };
-
-    // Enhanced M2A4 Slammer (Urban Purpose)
-    case 602: {
-        _vehicle = CV("B_MBT_01_TUSK_F");
-
-        for "_i" from 1 to 20 do {
-            _vehicle removeMagazineGlobal "200Rnd_762x51_Belt_Red";
-        };
-
-        _vehicle removeWeapon ("LMG_coax");
-
-        _vehicle addWeaponTurret ["HMG_127_MBT", [0]];
-
-        for "_i" from 1 to 4 do {
-            _vehicle addMagazineTurret ["500Rnd_127x99_mag_Tracer_Red", [0]];
-        };
-
-        _vehicle addMagazineTurret ["24Rnd_120mm_APFSDS_shells_Tracer_Red", [0]];
-        _vehicle addMagazineTurret ["12Rnd_120mm_HE_shells_Tracer_Red", [0]];
-        _vehicle addMagazineTurret ["12Rnd_120mm_HEAT_MP_T_Red", [0]];
-
-        for "_i" from 1 to 4 do {
-            _vehicle addMagazineTurret ["200Rnd_127x99_mag_Tracer_Red", [0,0]];
-        };
-
-        [_vehicle] call AW_fnc_vehicleCustomization;
-    };
-
-    // T-140K Angara
-    case 601: {
-        _vehicle = CV("O_MBT_04_command_F");
 
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
@@ -556,21 +605,21 @@ switch (_rewardId) do {
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
 
-    // MBT-52 Kuma
-    case 609: {
-        _vehicle = CV("I_MBT_03_cannon_F");
+    // M1A1
+    case 612: {
+        private _M1A1Types = ["rhsusf_m1a1aimd_usarmy",
+                              "rhsusf_m1a1aim_tuski_d",
+                              "rhsusf_m1a1aimwd_usarmy",
+                              "rhsusf_m1a1aim_tuski_wd",
+                              "rhsusf_m1a1fep_d",
+                              "rhsusf_m1a1fep_wd",
+                              "rhsusf_m1a1fep_od",
+                              "rhsusf_m1a1hc_wd"
+                             ];
+        _vehicle = CV((selectRandom(_M1A1Types)));
 
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
-
-    // T-100 Varsuk
-    case 607: {
-        _vehicle = CV("O_MBT_02_cannon_F");
-
-        [_vehicle] call AW_fnc_vehicleCustomization;
-    };
-
-
     /**************/
     /**** IFVs ****/
     /**************/
