@@ -143,7 +143,12 @@ switch (_rewardId) do {
 
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
+    // PO-30 Orca
+    case 203: {
+        _vehicle = CV("O_Heli_Light_02_dynamicLoadout_F");
 
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
     // AH-9 Pawnee
     case 204: {
         _vehicle = CV("B_Heli_Light_01_dynamicLoadout_F");
@@ -158,14 +163,26 @@ switch (_rewardId) do {
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
 
-    // PO-30 Orca
-    case 203: {
-        _vehicle = CV("O_Heli_Light_02_dynamicLoadout_F");
+    //AH-64D
+    case 206: {
+        _vehicle = CV("RHS_AH64D_wd");
 
         [_vehicle] call AW_fnc_vehicleCustomization;
-    };
+    }; 
+    //AH-1Z
+    case 207: {
+        _vehicle = CV("RHS_AH1Z");
 
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };  	
+	
+    //AH-6M
+    case 208: {
+        _vehicle = CV("RHS_MELB_AH6M");
 
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };  	
+	
     /***************/
     /**** VTOLs ****/
     /***************/
@@ -233,7 +250,18 @@ switch (_rewardId) do {
 
         [_vehicle] call AW_fnc_vehicleCustomization;
     };
+	//UH-1H
+    case 405: {
+        _vehicle = CV("rhs_uh1h_hidf");
 
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
+    // Wildcat
+    case 406: {
+        _vehicle = CV("UK3CB_BAF_Wildcat_HMA2_TRN_8A_Arctic");
+
+        [_vehicle] call AW_fnc_vehicleCustomization;
+    };
 
     /**************/
     /**** UAVs ****/

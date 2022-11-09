@@ -466,7 +466,523 @@ _factionMapping insert [
 ];
 
 InA_FactionMappings insert [["AAF", _factionMapping]];
+//////////////
+//// ChDKZ ////
+//////////////
+_factionMapping = createHashMap;
+_infantryMappings = createHashMap;
+_vehicleMappings = createHashMap;
 
+_factionMapping insert [
+    ["#name", "CHDKZ"],
+    ["#side", east]
+];
+
+
+//// Infantry ////
+
+// Units
+_infantryMappings insert [
+
+    ["#officers", ["rhsgref_ins_commander"]],
+    ["#squadleaders", ["rhsgref_ins_squadleader"]],
+    ["#teamleaders", ["rhsgref_ins_squadleader"]],
+    ["#riflemen", ["rhsgref_ins_rifleman_aks74", "rhsgref_ins_rifleman_akm", "rhsgref_ins_rifleman_aksu", "rhsgref_ins_grenadier", "rhsgref_ins_rifleman_RPG26"]],
+    ["#lats", ["rhsgref_ins_rifleman_RPG26"]],
+    ["#grenadiers", ["rhsgref_ins_grenadier"]],
+    ["#machinegunners", ["rhsgref_ins_arifleman_rpk"]],
+    ["#heavygunners", ["rhsgref_ins_machinegunner"]],
+    ["#marksmen", ["rhsgref_ins_militiaman_mosin"]],
+    ["#sharpshooters", ["rhsgref_ins_militiaman_mosin"]],
+    ["#snipers", ["rhsgref_ins_sniper"]],
+    ["#spotters", ["rhsgref_ins_spotter"]],
+    ["#ats", ["rhsgref_ins_grenadier_rpg"]],
+    ["#aas", ["rhsgref_ins_specialist_aa"]],
+    ["#medics", ["rhsgref_ins_medic"]],
+    ["#demos", ["rhsgref_ins_saboteur"]],
+    ["#engineers", ["rhsgref_ins_engineer"]],
+    ["#crews", ["rhsgref_ins_crew"]],
+    ["#heli_pilots", ["rhsgref_ins_pilot"]],
+    ["#heli_crews", ["rhsgref_ins_crew"]],
+    ["#pilots", ["rhsgref_ins_pilot"]],
+    ["#repair", ["rhsgref_ins_engineer"]],
+    ["#ammos", ["O_Soldier_A_F", "O_T_Soldier_A_F", "O_soldierU_A_F"]],
+    ["#aats", ["O_Soldier_AAT_F", "O_T_Soldier_AAT_F", "O_soldierU_AAT_F"]],
+    ["#aaas", ["O_Soldier_AAA_F", "O_T_Soldier_AAA_F", "O_soldierU_AAA_F"]],
+    ["#ahats", ["O_Soldier_AHAT_F", "O_T_Soldier_AHAT_F"]]
+  
+];
+
+// Squads
+_infSquads = [
+    ["rhsgref_ins_squadleader", "rhsgref_ins_machinegunner", "rhsgref_ins_grenadier", "rhsgref_ins_grenadier_rpg", "rhsgref_ins_rifleman_RPG26", "rhsgref_ins_machinegunner", "rhsgref_ins_rifleman", "rhsgref_ins_rifleman_aks74"],      2,
+
+    ["rhsgref_ins_rifleman", "rhsgref_ins_machinegunner", "rhsgref_ins_grenadier", "rhsgref_ins_rifleman_RPG26"],                                                          2.25
+];
+_sfSquads = _infSquads;
+_vpSquads = _sfSquads;
+
+_atTeams = [
+    ["rhsgref_ins_rifleman_aks74", "rhsgref_ins_grenadier_rpg", "rhsgref_ins_grenadier_rpg", "rhsgref_ins_machinegunner"],      1,
+    ["rhsgref_ins_rifleman_aksu", "rhsgref_ins_rifleman_RPG26", "rhsgref_ins_rifleman_RPG26", "rhsgref_ins_grenadier"],    1
+];
+
+_aaTeams = [
+    ["rhsgref_ins_rifleman_aksu", "rhsgref_ins_specialist_aa", "rhsgref_ins_specialist_aa", "rhsgref_ins_rifleman_aks74"], 1
+];
+
+_srTeams = [
+    ["rhsgref_ins_sniper", "rhsgref_ins_spotter"], 1
+];
+
+
+_infantryMappings insert [["#squads", _infSquads]];
+_infantryMappings insert [["#specop_squads", _sfSquads]];
+_infantryMappings insert [["#viper_squads", _vpSquads]];
+_infantryMappings insert [["#at_teams", _atTeams]];
+_infantryMappings insert [["#aa_teams", _aaTeams]];
+_infantryMappings insert [["#sniper_teams", _srTeams]];
+
+
+//// Vehicles ////
+//Cars
+_vecCars = [
+    "rhsgref_ins_uaz_ags",          0.75,
+    "rhsgref_ins_uaz_dshkm",        0.75,
+    "rhsgref_ins_uaz_spg9",         0.75 
+];
+
+
+
+// MRAPs
+_vehMRAPs = [
+    "rhsgref_BRDM2_ins",          1,
+    "rhsgref_BRDM2_ATGM_ins",     1,
+    "rhsgref_BRDM2UM_ins",        1,
+	"rhsgref_BRDM2_HQ_ins",       1 
+];
+
+// IFVs
+_vehIFVs = [
+    "rhsgref_ins_btr60",   1.5,
+    "rhsgref_ins_btr70",   1.5,
+    "rhsgref_ins_bmd2",    1.5,
+    "rhsgref_ins_bmp1d",   1.5,
+    "rhsgref_ins_bmp1k",   1.25,
+    "rhsgref_ins_bmp2k",   1,
+    "rhsgref_ins_bmd1p",   0.75,
+    "rhsgref_ins_bmd1",    0.75
+];
+
+// AAs
+_vehSPAAs = [
+    "rhsgref_ins_zsu234",             2
+
+];
+
+// MBTs
+_vehMBTs = [
+    "rhsgref_ins_t72bb",    2,
+    "rhsgref_ins_t72bc",    2,
+    "rhsgref_ins_t72ba",    2
+
+];
+
+// Helis
+_vehHelis = [
+    "rhsgref_ins_Mi8amt",            1
+
+];
+
+
+
+
+_vehicleMappings insert [["#cars", _vecCars]];
+_vehicleMappings insert [["#mraps", _vehMRAPs]];
+_vehicleMappings insert [["#ifvs", _vehIFVs]];
+_vehicleMappings insert [["#spaas", _vehSPAAs]];
+_vehicleMappings insert [["#mbts", _vehMBTs]];
+_vehicleMappings insert [["#helis", _vehHelis]];
+
+
+_factionMapping insert [
+    ["#infantry", _infantryMappings],
+    ["#vehicles", _vehicleMappings]
+];
+
+InA_FactionMappings insert [["CHDKZ", _factionMapping]];
+
+/////////////////
+//// Russia ////
+////////////////
+_factionMapping = createHashMap;
+_infantryMappings = createHashMap;
+_vehicleMappings = createHashMap;
+
+_factionMapping insert [
+    ["#name", "Russia"],
+    ["#side", east],
+	["#aux_factions", ["CSAT","CHDKZ", "FIA", "SYND"]],
+    ["#aux_faction_weights", [1, 1, 1.5, 1.5]],
+    ["#indep_factions", ["CSAT"]],
+    ["#guer_factions", ["TLA"]]
+];
+
+_infantryMappings insert [
+    ["#officers", ["rhs_msv_emr_officer", "rhs_msv_emr_officer_armored"]],
+    ["#squadleaders", ["rhs_msv_emr_sergeant"]],
+    ["#teamleaders", ["rhs_msv_emr_junior_sergeant"]],
+    ["#riflemen", ["rhs_msv_emr_RShG2", "rhs_msv_emr_rifleman", "rhs_msv_emr_grenadier", "rhs_msv_emr_LAT"]],
+    ["#lats", ["rhs_msv_emr_LAT"]],
+    ["#grenadiers", ["rhs_msv_emr_grenadier"]],
+    ["#machinegunners", ["rhs_msv_emr_arifleman_rpk"]],
+    ["#heavygunners", ["rhs_msv_emr_arifleman", "rhs_msv_emr_machinegunner"]],
+    ["#marksmen", ["rhs_msv_emr_marksman"]],
+    ["#sharpshooters", ["rhs_msv_emr_marksman"]],
+    ["#snipers", ["rhs_msv_emr_marksman"]],
+    ["#spotters", ["rhs_msv_emr_rifleman"]],
+    ["#ats", ["rhs_msv_emr_at"]],
+    ["#aas", ["rhs_msv_emr_aa"]],
+    ["#medics", ["rhs_msv_emr_medic"]],
+    ["#engineers", ["rhs_msv_emr_engineer"]],
+    ["#crews", ["rhs_msv_emr_combatcrew"]],
+    ["#heli_pilots", ["rhs_pilot", "rhs_pilot_tan", "rhs_pilot_combat_heli", "rhs_pilot_transport_heli"]],
+    ["#pilots", ["rhs_pilot"]],
+    ["#repair", ["rhs_msv_emr_engineer"]],
+
+    ["#civs", ["C_man_1","C_man_polo_1_F_euro","C_man_polo_2_F_euro","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_6_F","C_man_shorts_4_F_asia"]]
+];
+
+// Squads
+_infSquads = [
+    ["rhs_msv_emr_sergeant", "rhs_msv_emr_efreitor", "rhs_msv_emr_grenadier_rpg", "rhs_msv_emr_strelok_rpg_assist", "rhs_msv_emr_machinegunner", "rhs_msv_emr_LAT", "rhs_msv_emr_rifleman", "rhs_msv_emr_medic"],   1
+];
+_sfSquads = _infSquads;
+_vpSquads = _sfSquads;
+// Teams
+_infTeams = [
+    ["rhs_vdv_sergeant", "rhs_msv_emr_medic", "rhs_msv_emr_arifleman_rpk", "rhs_msv_emr_LAT"],                          2,
+    ["rhs_vdv_sergeant", "rhs_msv_emr_medic", "rhs_vdv_machinegunner_assistant", "rhs_vdv_arifleman"],                  2,
+    ["rhs_vdv_sergeant", "rhs_msv_emr_medic", "rhs_msv_emr_arifleman", "rhs_msv_emr_marksman"],                         1.75
+
+];
+_sfTeams = _infTeams;
+_vpTeams = _sfTeams;
+//AT Team
+_atTeams = [
+    ["rhs_msv_emr_junior_sergeant", "rhs_msv_emr_LAT", "rhs_msv_emr_at", "rhs_msv_emr_rifleman","rhs_msv_emr_strelok_rpg_assist"],              1.5
+
+];
+//AA Team
+_aaTeams = [
+    ["rhs_msv_emr_junior_sergeant", "rhs_msv_emr_aa", "rhs_msv_emr_aa","rhs_msv_emr_aa","rhs_msv_emr_rifleman"],          1.5
+];
+
+_srTeams = [
+    ["rhs_msv_emr_marksman", "rhs_msv_emr_rifleman"], 1
+];
+
+_infantryMappings insert [["#squads", _infSquads]];
+_infantryMappings insert [["#specop_squads", _sfSquads]];
+_infantryMappings insert [["#viper_squads", _vpSquads]];
+_infantryMappings insert [["#teams", _infTeams]];
+_infantryMappings insert [["#specop_teams", _sfTeams]];
+_infantryMappings insert [["#viper_teams", _vpTeams]];
+_infantryMappings insert [["#at_teams", _atTeams]];
+_infantryMappings insert [["#aa_teams", _aaTeams]];
+_infantryMappings insert [["#sniper_teams", _srTeams]];
+
+
+//// Vehicles ////
+//Cars
+_vecCars = [
+    "rhs_tigr_sts_msv",          0.75,
+    "rhs_tigr_sts_3camo_msv",        0.75
+
+];
+
+
+
+// MRAPs
+_vehMRAPs = [
+    "rhsgref_BRDM2_ins",          1,
+    "rhsgref_BRDM2_ATGM_ins",     1,
+    "rhsgref_BRDM2UM_ins",        1,
+	"rhsgref_BRDM2_HQ_ins",       1 
+];
+
+// IFVs
+_vehIFVs = [
+    "rhsgref_ins_btr60",   1.5,
+    "rhsgref_ins_btr70",   1.5,
+    "rhsgref_ins_bmd2",    1.5,
+    "rhsgref_ins_bmp1d",   1.5,
+    "rhsgref_ins_bmp1k",   1.25,
+    "rhsgref_ins_bmp2k",   1,
+    "rhsgref_ins_bmd1p",   0.75,
+    "rhsgref_ins_bmd1",    0.75
+];
+
+// AAs
+_vehSPAAs = [
+    "rhsgref_ins_zsu234",             2,
+    "rhs_zsu234_aa",                  2
+];
+
+// MBTs
+_vehMBTs = [
+    "rhsgref_ins_t72bb",    2,
+    "rhsgref_ins_t72bc",    2,
+	"rhs_t14_tv",           2,
+    "rhs_t80",              2
+
+];
+
+// Helis
+_vehHelis = [
+    "rhsgref_ins_Mi8amt",            1,
+    "RHS_Mi8mt_vv",                  1
+];
+
+
+// Heli CAS
+_vehHeliCAS = [
+    "RHS_Ka52_vvsc",                        2,
+    "RHS_Mi24P_vdv",                        2,
+    "RHS_Mi8MTV3_heavy_vdv",                3,
+    "RHS_Mi8MTV3_vdv",                      3
+];
+
+// Jets
+_vehJets = [
+    "RHS_Su25SM_vvs",        3,
+    "RHS_Su25SM_vvsc",       3,
+    "rhs_mig29s_vmf",        1,
+	"RHS_T50_vvs_generic",   1,
+	"RHS_T50_vvs_054",       1
+];
+
+
+_vehicleMappings insert [["#cars", _vecCars]];
+_vehicleMappings insert [["#mraps", _vehMRAPs]];
+_vehicleMappings insert [["#ifvs", _vehIFVs]];
+_vehicleMappings insert [["#spaas", _vehSPAAs]];
+_vehicleMappings insert [["#mbts", _vehMBTs]];
+_vehicleMappings insert [["#helis", _vehHelis]];
+_vehicleMappings insert [["#cas_helis", _vehHeliCAS]];
+_vehicleMappings insert [["#jets", _vehJets]];
+
+_factionMapping insert [
+    ["#infantry", _infantryMappings],
+    ["#vehicles", _vehicleMappings]
+];
+
+InA_FactionMappings insert [["Russia", _factionMapping]];
+
+///////////////
+//// SAF /////
+//////////////
+
+_factionMapping = createHashMap;
+_infantryMappings = createHashMap;
+_vehicleMappings = createHashMap;
+
+_factionMapping insert [
+    ["#name", "SAF"],
+    ["#side", east]
+
+];
+
+//// Infantry ////
+
+// Units
+_infantryMappings insert [
+    ["#officers", ["rhssaf_army_o_m10_para_officer"]],
+    ["#squadleaders", ["rhssaf_army_o_m10_para_sq_lead"]],
+    ["#teamleaders", ["rhssaf_army_o_m10_para_ft_lead"]],
+    ["#riflemen", ["rhssaf_army_o_m10_para_rifleman_at","rhssaf_army_o_m10_para_rifleman_hk416","rhssaf_army_o_m10_para_rifleman_g36t","rhssaf_army_o_m10_para_rifleman_m21","rhssaf_army_o_m10_para_rifleman_ammo"]],
+    ["#lats", ["rhssaf_army_o_m10_para_rifleman_at"]],
+    ["#grenadiers", ["rhssaf_army_o_m10_para_gl_m320","rhssaf_army_o_m10_para_gl_ag36"]],
+    ["#machinegunners", ["rhssaf_army_o_m10_para_mgun_minimi"]],
+    ["#heavygunners", ["rhssaf_army_o_m10_para_mgun_m84"]],
+    ["#marksmen", ["rhssaf_army_o_m10_para_sniper_m76"]],
+    ["#snipers", ["rhssaf_army_o_m10_para_sniper_m82a1"]],
+    ["#spotters", ["rhssaf_army_o_m10_para_spotter"]],
+    ["#ats", ["rhssaf_army_o_m10_para_spec_at"]],
+    ["#aas", ["rhssaf_army_o_m10_para_spec_aa"]],
+    ["#medics", ["rhssaf_army_o_m10_para_medic"]],
+    ["#demos", ["rhssaf_army_o_m10_para_exp"]],
+    ["#engineers", ["rhssaf_army_o_m10_para_engineer"]],
+    ["#repair", ["rhssaf_army_o_m10_para_repair"]]
+    
+];
+
+// Squads
+_infSquads = [
+    ["rhssaf_army_o_m10_digital_sq_lead", "rhssaf_army_o_m10_digital_ft_lead", "rhssaf_army_o_m10_digital_sniper_m76", "rhssaf_army_o_m10_digital_gl", "rhssaf_army_o_m10_digital_rifleman_at", "rhssaf_army_o_m10_digital_asst_mgun", "rhssaf_army_o_m10_digital_gl", "rhssaf_army_o_m10_digital_mgun_m84"],   1,
+    ["rhssaf_army_o_m10_digital_sq_lead", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_o_m10_digital_asst_mgun", "rhssaf_army_o_m10_digital_gl", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_o_m10_digital_gl", "rhssaf_army_o_m10_digital_rifleman_at"],    1,
+    ["rhssaf_army_o_m10_digital_sq_lead", "rhssaf_army_o_m10_digital_ft_lead", "rhssaf_army_o_m10_digital_rifleman_m21", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_o_m10_digital_gl", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_o_m10_digital_gl", "rhssaf_army_o_m10_digital_rifleman_at"],  1
+
+];
+
+_sfSquads = _infSquads;
+_vpSquads = _sfSquads;
+
+// Teams
+_infTeams = [
+    ["rhssaf_army_o_m10_digital_officer", "rhssaf_army_o_m10_digital_officer", "rhssaf_army_o_m10_digital_sq_lead", "rhssaf_army_o_m10_digital_rifleman_m21"], 1,
+    ["rhssaf_army_o_m10_digital_officer", "rhssaf_army_o_m10_digital_sq_lead", "rhssaf_army_o_m10_digital_medic", "rhssaf_army_o_m10_digital_sq_lead"], 1
+];
+
+_sfTeams = _infTeams;
+_vpTeams = _sfTeams;
+
+_atTeams = [
+    ["rhssaf_army_o_m10_digital_ft_lead", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_o_m10_digital_spec_at", "rhssaf_army_o_m10_digital_spec_at"], 1
+
+];
+
+_aaTeams = [
+    ["rhssaf_army_o_m10_digital_ft_lead", "rhssaf_army_o_m10_digital_mgun_m84", "rhssaf_army_m10_digital_spec_aa", "rhssaf_army_m10_digital_spec_aa"], 1
+];
+
+_srTeams = [
+    ["rhssaf_army_o_m10_para_sniper_m82a1", "rhssaf_army_o_m10_para_spotter"], 1
+];
+
+_infantryMappings insert [["#squads", _infSquads]];
+_infantryMappings insert [["#specop_squads", _sfSquads]];
+_infantryMappings insert [["#viper_squads", _vpSquads]];
+_infantryMappings insert [["#teams", _infTeams]];
+_infantryMappings insert [["#specop_teams", _sfTeams]];
+_infantryMappings insert [["#viper_teams", _vpTeams]];
+_infantryMappings insert [["#at_teams", _atTeams]];
+_infantryMappings insert [["#aa_teams", _aaTeams]];
+_infantryMappings insert [["#sniper_teams", _srTeams]];
+
+//// Vehicles ////
+
+//Cars
+_vecCars = [
+    "rhssaf_army_o_m1025_olive_m2",          0.75,
+    "rhssaf_army_o_m1151_olive_pkm",         0.75
+
+];
+
+// MBTs
+_vehMBTs = [
+    "rhssaf_army_o_t72s", 1
+];
+
+// Helis
+_vehHelis = [
+    "rhssaf_airforce_o_ht48", 0.3,
+    "rhssaf_airforce_o_ht40", 0.3
+];
+
+
+
+// Jets
+_vehJets = [
+    "rhssaf_airforce_o_l_18",      1,
+    "rhssaf_airforce_o_l_18_101",  1
+
+];
+
+
+_vehicleMappings insert [["#cars", _vecCars]];
+_vehicleMappings insert [["#mbts", _vehMBTs]];
+_vehicleMappings insert [["#helis", _vehHelis]];
+_vehicleMappings insert [["#jets", _vehJets]];
+
+_factionMapping insert [
+    ["#infantry", _infantryMappings],
+    ["#vehicles", _vehicleMappings]
+];
+InA_FactionMappings insert [["SAF", _factionMapping]];
+
+///////////////
+//// TLA /////
+//////////////
+
+_factionMapping = createHashMap;
+_infantryMappings = createHashMap;
+_vehicleMappings = createHashMap;
+
+_factionMapping insert [
+    ["#name", "TLA"],
+    ["#side", east]
+
+];
+
+//// Infantry ////
+
+// Units
+_infantryMappings insert [
+    ["#squadleaders", ["rhsgref_tla_squadleader"]],
+    ["#teamleaders", ["rhsgref_tla_warlord"]],
+    ["#riflemen", ["rhsgref_tla_rifleman","rhsgref_tla_rifleman_akms","rhsgref_tla_rifleman_l1a1","rhsgref_tla_rifleman_m1","rhsgref_tla_rifleman_m14","rhsgref_tla_rifleman_M16","rhsgref_tla_rifleman_pm63","rhsgref_tla_rifleman_rpg75","rhsgref_tla_rifleman_vz58"]],
+    ["#lats", ["rhsgref_tla_rifleman_rpg75"]],
+    ["#grenadiers", ["rhsgref_tla_grenadier","rhsgref_tla_grenadier_m79"]],
+    ["#machinegunners", ["rhsgref_tla_machinegunner_mg42"]],
+    ["#heavygunners", ["rhsgref_tla_machinegunner"]],
+    ["#marksmen", ["rhsgref_tla_marksman_m14"]],
+    ["#ats", ["rhsgref_tla_specialist_at"]],
+    ["#medics", ["rhsgref_tla_medic"]],
+    ["#demos", ["rhsgref_tla_saboteur"]],
+    ["#engineers", ["rhsgref_tla_mechanic"]]
+
+    
+];
+
+// Squads
+_infSquads = [
+    ["rhsgref_tla_squadleader", "rhsgref_tla_rifleman_pm63", "rhsgref_tla_rifleman", "rhsgref_tla_machinegunner", "rhsgref_tla_grenadier", "rhsgref_tla_rifleman_vz58", "rhsgref_tla_machinegunner_mg42w", "rhsgref_tla_grenadier_m79", "rhsgref_tla_specialist_at", "rhsgref_tla_rifleman_M16", "rhsgref_tla_medic"],   1
+
+
+];
+
+_sfSquads = _infSquads;
+_vpSquads = _sfSquads;
+
+// Teams
+_infTeams = [
+    ["rhsgref_tla_squadleader", "rhsgref_tla_rifleman_l1a1", "rhsgref_tla_rifleman_m1", "rhsgref_tla_rifleman_m14"], 1
+
+];
+
+_sfTeams = _infTeams;
+_vpTeams = _sfTeams;
+
+_atTeams = [
+    ["rhsgref_tla_squadleader", "rhsgref_tla_specialist_at", "rhsgref_tla_specialist_at", "rhsgref_tla_machinegunner_mg42"], 1
+];
+
+_infantryMappings insert [["#squads", _infSquads]];
+_infantryMappings insert [["#specop_squads", _sfSquads]];
+_infantryMappings insert [["#viper_squads", _vpSquads]];
+_infantryMappings insert [["#teams", _infTeams]];
+_infantryMappings insert [["#specop_teams", _sfTeams]];
+_infantryMappings insert [["#viper_teams", _vpTeams]];
+_infantryMappings insert [["#at_teams", _atTeams]];
+
+//// Vehicles ////
+
+//Cars
+_vecCars = [
+    "rhsgref_tla_offroad_armed",      0.75,
+    "rhsgref_tla_offroad_at",         0.75
+
+];
+
+_vehicleMappings insert [["#cars", _vecCars]];
+
+
+_factionMapping insert [
+    ["#infantry", _infantryMappings],
+    ["#vehicles", _vehicleMappings]
+];
+InA_FactionMappings insert [["TLA", _factionMapping]];
 
 //////////////
 //// PAVN ////

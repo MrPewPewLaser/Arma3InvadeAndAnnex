@@ -76,10 +76,18 @@ private _buildingBlacklist = [
     "Land_Lighthouse_small_ruins_F"
 ];
 
+
+
+
 private _unitTypes = [
-    "#riflemen", "#machinegunners", "#marksmen",
-    "#engineers", "#medics", "#teamleaders",
-    "#heavygunners", "#sharpshooters", "#lats"
+    "#riflemen",
+	"#marksmen",
+	"#medics",
+	"#machinegunners",
+	"#heavygunners",
+	"#medics",
+	"#marksmen"
+	
 ];
 
 private _AOType = (missionConfigFile >> worldName >> "AOs" >> _AO >> "type") call BIS_fnc_getCfgData;
@@ -171,7 +179,7 @@ for "_i" from 1 to _buildingCount do {
     InA_Server_mainAOUnits append _x;
 } forEach [_units, _fortObjs];
 
-// Set garrisoned building to invulnerable for the duration of the AO
+/*Set garrisoned building to invulnerable for the duration of the AO
 if (_garrisonedBuildings isNotEqualTo []) then {
     0 = [_garrisonedBuildings] spawn {
         params ["_buildings"];
@@ -190,3 +198,4 @@ if (_garrisonedBuildings isNotEqualTo []) then {
         } forEach _buildings;
     };
 };
+*/

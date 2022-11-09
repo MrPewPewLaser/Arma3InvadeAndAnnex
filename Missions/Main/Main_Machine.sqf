@@ -36,9 +36,9 @@ while {InA_Server_missionActive} do {
     InA_Server_MainAO_Completed = false;
 
     private _factionHash = InA_EnemyFactionHash;
-
+	
     if ((toLower worldName) == "altis") then {
-        private _faction = (selectRandomWeighted ["CSAT", 1, "AAF", 0.35]);
+        private _faction = (selectRandomWeighted ["Russia", 1, "SAF", 0.35]);
 
         _factionHash = (InA_FactionMappings get _faction);
     };

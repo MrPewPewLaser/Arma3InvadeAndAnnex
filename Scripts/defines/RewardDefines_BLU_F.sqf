@@ -19,7 +19,10 @@ InA_Rewards_RewardList = [
     [200, 203, "PO-30 Orca", 2],
     [200, 204, "AH-9 Pawnee", 2],
     [200, 205, "WY-55 Hellcat", 2],
-
+    [200, 206, "Apache AH1", 2],
+    [200, 207, "AH-1Z", 2],	
+    [200, 208, "AH-6M Little Bird", 2],		
+	
     // VTOLs
     [300, 301, "V-44 X Blackfish (Armed)", 1],
     [300, 302, "Y-32 Xi'an (Infantry Transport, unarmed)", 2],
@@ -32,7 +35,8 @@ InA_Rewards_RewardList = [
     [400, 402, "MI-290 Taru (Heavy Lifter)", 4],
     [400, 403, "CH-49 Mohawk", 4],
     [400, 404, "WY-55 Hellcat (Unarmed)", 4],
-
+	[400, 405, "UH-1H", 4],
+	[400, 406, "Wildcat AH1 8 Transport", 4],
     // UAVs/UGVs
     [500, 501, "UCAV Sentinel", 3],
     [500, 502, "Praetorian 1C (AMV-7 Marshall mounted)", 2],
@@ -40,17 +44,18 @@ InA_Rewards_RewardList = [
     [500, 504, "Mk21 Centurion (FV-720 Mora mounted)", 2],
 
     // MBTs
+    [600, 601, "T-140K Angara", 2],
+    [600, 602, "Enhanced M2A4 Slammer (Urban Purpose)", 2],
+    [600, 603, "Enhanced T-100 Varsuk", 2],
+    [600, 604, "Enhanced MBT-52 Kuma", 2],
+    [600, 605, "Enhanced T-140 Angara", 2],
+    [600, 606, "Enhanced T-140K Angara", 2],
+    [600, 607, "T-100 Varsuk", 2],
+    [600, 608, "T-140 Angara", 2],
+    [600, 609, "MBT-52 Kuma", 2],
     [600, 610, "M2A4 Slammer", 2],
     [600, 611, "M2A4 Slammer (Urban Purpose)", 2],
-    [600, 602, "Enhanced M2A4 Slammer (Urban Purpose)", 2],
-    [600, 607, "T-100 Varsuk", 2],
-    [600, 603, "Enhanced T-100 Varsuk", 2],
-    [600, 609, "MBT-52 Kuma", 2],
-    [600, 604, "Enhanced MBT-52 Kuma", 2],
-    [600, 608, "T-140 Angara", 2],
-    [600, 605, "Enhanced T-140 Angara", 2],
-    [600, 601, "T-140K Angara", 2],
-    [600, 606, "Enhanced T-140K Angara", 2],
+
 
     // IFVs
     [700, 703, "AWC 301 Nyx (AT)", 3],
