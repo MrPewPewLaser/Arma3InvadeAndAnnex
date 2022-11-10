@@ -1,3 +1,10 @@
+# Arma 3 Invade & Annex Plus
+
+This is the repository for the custom Invade & Annex Mission based on [AW's Invade & Annex](https://www.ahoyworld.net/).
+
+Made with ❤️ by FlyingThread, chicken_06 and Pew.
+
+LEGAL
 Permission is hereby granted, free of charge, to any person obtaining 
 a copy of this software and associated documentation files (the "Software"), 
 to deal in the Software without restriction, including without limitation 
