@@ -94,7 +94,8 @@ switch (true) do {
         if (_isSquadLeader) then {
             _allowedItemsArray append (
                 InA_AllowedArsenal_uniformsOfficer +
-                InA_AllowedArsenal_heagearOfficer
+                InA_AllowedArsenal_heagearOfficer +
+                InA_AllowedArsenal_vestsSL
             );
 
             _allowedBackpacksArray append InA_AllowedArsenal_backpacksRadio;
@@ -118,6 +119,10 @@ switch (true) do {
             InA_AllowedArsenal_generalPistols +
             InA_AllowedArsenal_Machineguns
         );
+
+        _allowedItemsArray append (
+            InA_AllowedArsenal_vestsAutorifleman
+        );
     };
 
     // Light AT
@@ -131,6 +136,10 @@ switch (true) do {
         _allowedWeaponsArray = (
             InA_AllowedArsenal_generalPistols +
             InA_AllowedArsenal_assaultRiflesUGL
+        );
+
+        _allowedItemsArray append (
+            InA_AllowedArsenal_vestsGrenadier
         );
     };
 

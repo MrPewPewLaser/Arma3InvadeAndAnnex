@@ -46,10 +46,10 @@ InA_AllowedArsenal_generalItems = [
     "acc_flashlight_pistol",
 
     //Night Vision Goggles:
-    "NVGoggles", "NVGoggles_INDEP", "NVGoggles_OPFOR", "NVGoggles_tna_F", "O_NVGoggles_grn_F", "HMNVS_DOWN", "HMNVS_UP",
+    "NVGoggles", "NVGoggles_INDEP", "NVGoggles_OPFOR", "NVGoggles_tna_F", "O_NVGoggles_grn_F", "UK3CB_BAF_HMNVS",
 
     //Binoculars:
-    "Binocular", "Rangefinder", "Laserdesignator", "Laserdesignator_01_khk_F", "Laserdesignator_03", "optika_SOFLAM", "soflam",
+    "Binocular", "Rangefinder", "Laserdesignator", "Laserdesignator_01_khk_F", "Laserdesignator_03", "UK3CB_BAF_Soflam_Laserdesignator",
 
     //Map, GPS, Radio, Compass, Watch:
     "ItemMap", "ItemGPS", "ItemCompass", "ItemWatch",
@@ -185,7 +185,7 @@ InA_AllowedArsenal_generalMagazines = [
     "MRAWS_HE_F", "MRAWS_HEAT55_F", "MRAWS_HEAT_F", "NLAW_F", "RPG32_F", "RPG32_HE_F", "RPG7_F", "Titan_AA", "Titan_AP", "Titan_AT", "Vorona_HE", "Vorona_HEAT",
 
     // Misc:
-    "Laserbatteries"
+    "Laserbatteries",
 
     // 3CB Crates
     "UK3CB_BAF_Box_WpsBasic", "UK3CB_BAF_Box_WpsSpecial", "UK3CB_BAF_Box_WpsLaunch", "UK3CB_BAF_Box_WpsStatic", "UK3CB_BAF_Box_L1A1", "UK3CB_BAF_Box_L7A2", 
@@ -204,16 +204,16 @@ InA_AllowedArsenal_generalMagazines = [
     "UK3CB_BAF_762_200Rnd", "UK3CB_BAF_762_200Rnd_Blank", "UK3CB_BAF_762_200Rnd_T", "UK3CB_BAF_762_L42A1_10Rnd", "UK3CB_BAF_762_L42A1_10Rnd_Blank", "UK3CB_BAF_762_L42A1_10Rnd_T",
     "UK3CB_BAF_762_L42A1_20Rnd", "UK3CB_BAF_762_L42A1_20Rnd_Blank", "UK3CB_BAF_762_L42A1_20Rnd_T", 
     "UK3CB_BAF_1Rnd_HE_Grenade_Shell", "UK3CB_BAF_1Rnd_HEDP_Grenade_Shell", "UK3CB_BAF_1Rnd_Blank_Grenade_Shell","UK3CB_BAF_UGL_FlareWhite_F", "UK3CB_BAF_UGL_FlareRed_F", 
-    "UK3CB_BAF_UGL_FlareGreen_F", "UK3CB_BAF_UGL_FlareYellow_F, ""UK3CB_BAF_UGL_FlareCIR_F",
+    "UK3CB_BAF_UGL_FlareGreen_F", "UK3CB_BAF_UGL_FlareYellow_F", "UK3CB_BAF_UGL_FlareCIR_F",
     "UK3CB_BAF_32Rnd_40mm_G_Box",
     "UK3CB_BAF_1Rnd_60mm_Mo_Shells", "UK3CB_BAF_1Rnd_60mm_Mo_Flare_White", "UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White",
     "UK3CB_BAF_1Rnd_81mm_Mo_Shells", "UK3CB_BAF_1Rnd_81mm_Mo_Flare_White", "UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White", "UK3CB_BAF_1Rnd_81mm_Mo_Smoke_White", "UK3CB_BAF_1Rnd_81mm_Mo_Guided", 
-    "UK3CB_BAF_1Rnd_81mm_Mo_LG"
+    "UK3CB_BAF_1Rnd_81mm_Mo_LG",
 
     // 3CB ammo
     "UK3CB_BAF_HandGrenade_Blank_Ammo","UK3CB_BAF_B_127x99_Ball", "UK3CB_BAF_B_127x99_AP", "UK3CB_BAF_B_12Gauge_Pellets", "UK3CB_BAF_B_12Gauge_Slug", "UK3CB_BAF_Blank", "UK3CB_BAF_556_Ball", 
     "UK3CB_BAF_556_Ball_Tracer_Red", "UK3CB_BAF_762_Ball", "UK3CB_BAF_762_Ball_Tracer_Red", "UK3CB_BAF_762_Ball_L42A1", "UK3CB_BAF_762_Ball_L42A1_Tracer_Red", "UK3CB_BAF_762_Ball_B416",
-    "UK3CB_BAF_338_Ball", "UK3CB_BAF_338_Ball_Tracer_Red", "UK3CB_BAF_G_40mm_Blank","UK3CB_BAF_F_40mm_White", "UK3CB_BAF_F_40mm_Green", "UK3CB_BAF_F_40mm_Red", "UK3CB_BAF_F_40mm_Yellow", 
+    "UK3CB_BAF_338_Ball", "UK3CB_BAF_338_Ball_Tracer_Red", "UK3CB_BAF_G_40mm_Blank", "UK3CB_BAF_F_40mm_White", "UK3CB_BAF_F_40mm_Green", "UK3CB_BAF_F_40mm_Red", "UK3CB_BAF_F_40mm_Yellow", 
     "UK3CB_BAF_F_40mm_CIR", "UK3CB_BAF_Smoke_81mm_AMOS", "UK3CB_BAF_Flare_81mm_AMOS_White", "UK3CB_BAF_IRFlare_81mm_AMOS_White", "UK3CB_BAF_Sh_60mm_AMOS", "UK3CB_BAF_Flare_60mm_AMOS_White", 
     "UK3CB_BAF_Smoke_60mm_AMOS"
 ];
@@ -321,7 +321,7 @@ InA_AllowedArsenal_marksmanRifles = [
     "srifle_DMR_03_woodland_F", "srifle_DMR_05_blk_F", "srifle_DMR_05_tan_f", "srifle_DMR_06_camo_F", "srifle_DMR_06_olive_F",
     "srifle_DMR_07_blk_F", "srifle_EBR_F", "srifle_DMR_06_hunter_F", "arifle_MSBS65_Mark_F",
     "arifle_MSBS65_Mark_black_F", "arifle_MSBS65_Mark_sand_F", "UK3CB_BAF_L86A2", "UK3CB_BAF_L86A3",
-    "UK3CB_BAF_L129A1", "UK3CB_BAF_L129A1_Grippod", "UK3CB_BAF_L129A1_AFG","UK3CB_BAF_L129A1_FGrip"
+    "UK3CB_BAF_L129A1", "UK3CB_BAF_L129A1_Grippod", "UK3CB_BAF_L129A1_AFG", "UK3CB_BAF_L129A1_FGrip"
 ];
 
 
@@ -389,7 +389,7 @@ InA_AllowedArsenal_generalHeadgear = [
     "UK3CB_BAF_H_Beret_Mer", "UK3CB_BAF_H_Beret_Mer_PRR", "UK3CB_BAF_H_Beret_Mer_PRR_Over", "UK3CB_BAF_H_Beret_PR", "UK3CB_BAF_H_Beret_PR_PRR", "UK3CB_BAF_H_Beret_PR_PRR_Over",
     "UK3CB_BAF_H_Beret_PWRR", "UK3CB_BAF_H_Beret_PWRR_PRR", "UK3CB_BAF_H_Beret_PWRR_PRR_Over", "UK3CB_BAF_H_Beret_RA", "UK3CB_BAF_H_Beret_RA_PRR",
     "UK3CB_BAF_H_Beret_RA_PRR_Over", "UK3CB_BAF_H_Beret_RAMC", "UK3CB_BAF_H_Beret_RAMC_PRR", "UK3CB_BAF_H_Beret_RAMC_PRR_Over",
-    "UK3CB_BAF_H_Beret_REng", "UK3CB_BAF_H_Beret_REng_PRR", "UK3CB_BAF_H_Beret_REng_PRR_Over", "UK3CB_BAF_H_Beret_RLC_Commando", "UK3CB_BAF_H_Beret_RLC_Commando_PRR"
+    "UK3CB_BAF_H_Beret_REng", "UK3CB_BAF_H_Beret_REng_PRR", "UK3CB_BAF_H_Beret_REng_PRR_Over", "UK3CB_BAF_H_Beret_RLC_Commando", "UK3CB_BAF_H_Beret_RLC_Commando_PRR",
     "UK3CB_BAF_H_Beret_RLC_Commando_PRR_Over", "UK3CB_BAF_H_Beret_RM_Bootneck", "UK3CB_BAF_H_Beret_RM_Bootneck_PRR", "UK3CB_BAF_H_Beret_RM_Bootneck_PRR_Over",
     "UK3CB_BAF_H_Beret_RM_Parade", "UK3CB_BAF_H_Beret_RM_Recruit", "UK3CB_BAF_H_Beret_RM_Recruit_PRR", "UK3CB_BAF_H_Beret_RM_Recruit_PRR_Over" ,"UK3CB_BAF_H_Beret_RTR",
     "UK3CB_BAF_H_Beret_RTR_PRR", "UK3CB_BAF_H_Beret_RTR_PRR_Over", "UK3CB_BAF_H_Beret_SAS", "UK3CB_BAF_H_Beret_SAS_PRR", "UK3CB_BAF_H_Beret_SAS_PRR_Over", "UK3CB_BAF_H_Beret_SBS",
@@ -415,8 +415,7 @@ InA_AllowedArsenal_generalHelmets = [
     "H_HelmetSpecB_paint1", "H_HelmetSpecB_paint2", "H_HelmetSpecB_sand", "H_HelmetSpecB_snakeskin", "H_PASGT_basic_black_F", "H_PASGT_basic_blue_F",
     "H_PASGT_basic_olive_F", "H_PASGT_basic_white_F", "H_HelmetB_plain_wdl", "H_HelmetSpecB_wdl", "H_HelmetB_light_wdl", "H_HelmetHBK_headset_F",
     "H_HelmetHBK_chops_F", "H_HelmetHBK_ear_F", "H_HelmetHBK_F", "H_HelmetAggressor_cover_F", "H_HelmetAggressor_cover_taiga_F", "H_Tank_eaf_F",
-    "H_HelmetCrew_I_E", "H_HelmetB_TI_arid_F", "H_HelmetAggressor_F",
-    
+    "H_HelmetCrew_I_E", "H_HelmetB_TI_arid_F", "H_HelmetAggressor_F"
 ];
 
 
@@ -433,7 +432,7 @@ InA_AllowedArsenal_headgearEngineer = [
 InA_AllowedArsenal_heagearOfficer = [
     "H_Beret_Colonel", "UK3CB_BAF_H_Beret_RAMC_Officer", "UK3CB_BAF_H_Beret_RAMC_Officer_PRR", "UK3CB_BAF_H_Beret_RAMC_Officer_PRR_Over",
     "UK3CB_BAF_H_Beret_RM_Officer", "UK3CB_BAF_H_Beret_RM_Officer_PRR", "UK3CB_BAF_H_Beret_RM_Officer_PRR_Over",
-    "UK3CB_BAF_H_Beret_UN_Officer", "UK3CB_BAF_H_Beret_UN_Officer_PRR", "UK3CB_BAF_H_Beret_UN_Officer_PRR_Over",
+    "UK3CB_BAF_H_Beret_UN_Officer", "UK3CB_BAF_H_Beret_UN_Officer_PRR", "UK3CB_BAF_H_Beret_UN_Officer_PRR_Over"
 ];
 
 
@@ -454,7 +453,15 @@ InA_AllowedArsenal_generalUniforms = [
     "U_B_CombatUniform_vest_mcam_wdl_f", "U_B_CBRN_Suit_01_MTP_F", "U_B_CBRN_Suit_01_Tropic_F",
     "U_B_CBRN_Suit_01_Wdl_F", "U_I_E_Uniform_01_shortsleeve_F", "U_I_E_Uniform_01_sweater_F", "U_I_E_Uniform_01_tanktop_F",
     "U_I_E_Uniform_01_F", "U_I_L_Uniform_01_deserter_F", "U_O_R_Gorka_01_F", "U_O_R_Gorka_01_brown_F", "U_O_R_Gorka_01_camo_F", "U_O_R_Gorka_01_black_F",
-    "U_I_G_resistanceLeader_F", "U_B_GEN_Soldier_F", "U_B_GEN_Commander_F", "U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_2_Arid_F", "U_B_CTRG_Soldier_3_Arid_F"
+    "U_I_G_resistanceLeader_F", "U_B_GEN_Soldier_F", "U_B_GEN_Commander_F", "U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_2_Arid_F", "U_B_CTRG_Soldier_3_Arid_F",
+    "UK3CB_BAF_U_CombatUniform_DDPM", "UK3CB_BAF_U_CombatUniform_DDPM_RM", "UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve", "UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve_RM",
+    "UK3CB_BAF_U_CombatUniform_DPMW", "UK3CB_BAF_U_CombatUniform_DPMW_RM", "UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve", "UK3CB_BAF_U_CombatUniform_DPMW_ShortSleeve_RM",
+    "UK3CB_BAF_U_CombatUniform_DPMT", "UK3CB_BAF_U_CombatUniform_DPMT_RM", "UK3CB_BAF_U_CombatUniform_DPMT_ShortSleeve", "UK3CB_BAF_U_CombatUniform_DPMT_ShortSleeve_RM",
+    "UK3CB_BAF_U_CombatUniform_MTP", "UK3CB_BAF_U_CombatUniform_MTP_RM", "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve", "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve_RM",
+    "UK3CB_BAF_U_CombatUniform_MTP_TShirt", "UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM", "UK3CB_BAF_U_CrewmanCoveralls_RTR", "UK3CB_BAF_U_JumperUniform_Plain",
+    "UK3CB_BAF_U_JumperUniform_DPMW", "UK3CB_BAF_U_JumperUniform_DPMT", "UK3CB_BAF_U_JumperUniform_MTP", "UK3CB_BAF_U_Smock_MTP", "UK3CB_BAF_U_Smock_MTP_DPMW",
+    "UK3CB_BAF_U_Smock_MTP_DDPM", "UK3CB_BAF_U_Smock_DPMT", "UK3CB_BAF_U_Smock_DPMW", "UK3CB_BAF_U_Smock_DPMW_OLI", "UK3CB_BAF_U_Smock_DPMW_MTP", "UK3CB_BAF_U_Smock_DDPM",
+    "UK3CB_BAF_U_Smock_DPMW_DDPM", "UK3CB_BAF_U_Smock_Arctic", "UK3CB_BAF_U_Smock_DPMW_Arctic", "UK3CB_BAF_U_Smock_MTP_Arctic", "UK3CB_BAF_U_RolledUniform_MTP"
 ];
 
 
@@ -482,13 +489,18 @@ InA_AllowedArsenal_uniformsPilot = [
     "U_B_HeliPilotCoveralls", "U_B_PilotCoveralls",
     "U_I_HeliPilotCoveralls", "U_I_pilotCoveralls",
     "U_I_E_Uniform_01_coveralls_F", "U_O_R_Gorka_01_black_F",
-    "U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"
+    "U_B_GEN_Soldier_F", "U_B_GEN_Commander_F", 
+    "UK3CB_BAF_U_HeliPilotCoveralls_RN",
+    "UK3CB_BAF_U_HeliPilotCoveralls_RAF",
+    "UK3CB_BAF_U_HeliPilotCoveralls_Army"
 ];
 
 
 // Sniper Ghillie
 InA_AllowedArsenal_uniformsSniper = [
-    "U_B_FullGhillie_ard", "U_B_FullGhillie_lsh", "U_B_FullGhillie_sard", "U_B_T_FullGhillie_tna_F"
+    "U_B_FullGhillie_ard", "U_B_FullGhillie_lsh", "U_B_FullGhillie_sard", "U_B_T_FullGhillie_tna_F", "UK3CB_BAF_U_CombatUniform_Arctic_Ghillie_RM", 
+    "UK3CB_BAF_U_CombatUniform_DDPM_Ghillie_RM", "UK3CB_BAF_U_CombatUniform_DPMW_Ghillie_RM", "UK3CB_BAF_U_CombatUniform_DPMT_Ghillie_RM",
+    "UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"
 ];
 
 // Officer Uniform
@@ -508,7 +520,19 @@ InA_AllowedArsenal_generalVests = [
     "V_TacChestrig_oli_F", "V_TacVest_blk", "V_TacVest_brn", "V_TacVest_camo", "V_TacVest_khk", "V_TacVest_oli", "V_TacVestIR_blk", "V_PlateCarrierGL_wdl",
     "V_PlateCarrier1_wdl", "V_PlateCarrier2_wdl", "V_PlateCarrierSpec_wdl", "V_TacVest_gen_F", "V_SmershVest_01_F", "V_SmershVest_01_radio_F",
     "V_CarrierRigKBT_01_heavy_EAF_F", "V_CarrierRigKBT_01_heavy_Olive_F", "V_CarrierRigKBT_01_light_EAF_F", "V_CarrierRigKBT_01_light_Olive_F",
-    "V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F"
+    "V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F",
+    "UK3CB_BAF_V_Osprey_Marksman_A", "UK3CB_BAF_V_Osprey", "UK3CB_BAF_V_Osprey_Belt_A", "UK3CB_BAF_V_Osprey_Holster", "UK3CB_BAF_V_Osprey_Lite",
+    "UK3CB_BAF_V_Osprey_DDPM1", "UK3CB_BAF_V_Osprey_DDPM2", "UK3CB_BAF_V_Osprey_DDPM3", "UK3CB_BAF_V_Osprey_DDPM4", "UK3CB_BAF_V_Osprey_DDPM5",
+    "UK3CB_BAF_V_Osprey_DDPM6", "UK3CB_BAF_V_Osprey_DDPM7", "UK3CB_BAF_V_Osprey_DDPM8", "UK3CB_BAF_V_Osprey_DDPM9", "UK3CB_BAF_V_Osprey_DPMW1",
+    "UK3CB_BAF_V_Osprey_DPMW2", "UK3CB_BAF_V_Osprey_DPMW3", "UK3CB_BAF_V_Osprey_DPMW4", "UK3CB_BAF_V_Osprey_DPMW5", "UK3CB_BAF_V_Osprey_DPMW6",
+    "UK3CB_BAF_V_Osprey_DPMW7", "UK3CB_BAF_V_Osprey_DPMW8", "UK3CB_BAF_V_Osprey_DPMW9", "UK3CB_BAF_V_Osprey_DPMT1", "UK3CB_BAF_V_Osprey_DPMT2",
+    "UK3CB_BAF_V_Osprey_DPMT3", "UK3CB_BAF_V_Osprey_DPMT4", "UK3CB_BAF_V_Osprey_DPMT5", "UK3CB_BAF_V_Osprey_DPMT6", "UK3CB_BAF_V_Osprey_DPMT7",
+    "UK3CB_BAF_V_Osprey_DPMT8", "UK3CB_BAF_V_Osprey_DPMT9", "UK3CB_BAF_V_Osprey_HiVis", "UK3CB_BAF_V_HiVis", "UK3CB_BAF_V_Osprey_Winter", 
+    "UK3CB_BAF_V_PLCE_Webbing_MTP", "UK3CB_BAF_V_PLCE_Webbing_DDPM", "UK3CB_BAF_V_PLCE_Webbing_DPMW", "UK3CB_BAF_V_PLCE_Webbing_OLI",
+    "UK3CB_BAF_V_PLCE_Webbing_DPMT", "UK3CB_BAF_V_PLCE_Webbing_Winter", "UK3CB_BAF_V_PLCE_Webbing_Plate_MTP", "UK3CB_BAF_V_PLCE_Webbing_Plate_DDPM",
+    "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW", "UK3CB_BAF_V_PLCE_Webbing_Plate_OLI", "UK3CB_BAF_V_PLCE_Webbing_Plate_DPMT", "UK3CB_BAF_V_PLCE_Webbing_Plate_Winter",
+    "UK3CB_BAF_V_Osprey_Rifleman_A", "UK3CB_BAF_V_Osprey_Rifleman_B", "UK3CB_BAF_V_Osprey_Rifleman_C", "UK3CB_BAF_V_Osprey_Rifleman_D", "UK3CB_BAF_V_Osprey_Rifleman_E",
+    "UK3CB_BAF_V_Osprey_Rifleman_F"
 ];
 
 
@@ -516,16 +540,36 @@ InA_AllowedArsenal_generalVests = [
 InA_AllowedArsenal_vestsMedic = [
     "V_DeckCrew_red_F", "V_DeckCrew_white_F",
     "V_Plain_crystal_F", "V_Plain_medical_F",
-    // ACE ---
-    "Osprey_Med", "Osprey_Med2", "Osprey_Med3", "Osprey_Med4"
+    "UK3CB_BAF_V_Osprey_Medic_A",
+    "UK3CB_BAF_V_Osprey_Medic_B",
+    "UK3CB_BAF_V_Osprey_Medic_C",
+    "UK3CB_BAF_V_Osprey_Medic_D"
 ];
 
+// Squad Leader Vests
+InA_AllowedArsenal_vestsSL = [
+    "UK3CB_BAF_V_Osprey_SL_A",
+    "UK3CB_BAF_V_Osprey_SL_B",
+    "UK3CB_BAF_V_Osprey_SL_C",
+    "UK3CB_BAF_V_Osprey_SL_D"
+];
+
+// Autorifleman Vests
+InA_AllowedArsenal_vestsAutorifleman = [
+    "UK3CB_BAF_V_Osprey_MG_A",
+    "UK3CB_BAF_V_Osprey_MG_B"
+];
+
+// Grenadier Vests
+InA_AllowedArsenal_vestsGrenadier = [
+    "UK3CB_BAF_V_Osprey_Grenadier_A",
+    "UK3CB_BAF_V_Osprey_Grenadier_B"
+];
 
 // Engineer Vests
 InA_AllowedArsenal_vestsEngineer = [
     "V_Safety_blue_F", "V_Safety_orange_F", "V_Safety_yellow_F"
 ];
-
 
 // EOD Vests
 InA_AllowedArsenal_vestsEOD = [
@@ -536,7 +580,11 @@ InA_AllowedArsenal_vestsEOD = [
 // Pilot Vests
 InA_AllowedArsenal_vestsPilot = [
     "V_BandollierB_blk", "V_BandollierB_oli", "V_BandollierB_rgr", "V_LegStrapBag_black_F", "V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F",
-    "V_Rangemaster_belt", "V_TacVest_blk", "V_TacVest_oli"
+    "V_Rangemaster_belt", "V_TacVest_blk", "V_TacVest_oli",
+    "UK3CB_BAF_V_Pilot_A",
+    "UK3CB_BAF_V_Pilot_DDPM",
+    "UK3CB_BAF_V_Pilot_DPMW",
+    "UK3CB_BAF_V_Pilot_DPMT"
 ];
 
 
@@ -548,7 +596,7 @@ InA_AllowedArsenal_generalBackpacks = [
     "B_LegStrapBag_olive_F", "B_Messenger_Black_F", "B_Messenger_Coyote_F", "B_Messenger_Gray_F", "B_Messenger_Olive_F", "B_Parachute", "B_TacticalPack_blk",
     "B_TacticalPack_mcamo", "B_TacticalPack_oli", "B_TacticalPack_rgr", "B_ViperHarness_blk_F", "B_ViperHarness_khk_F", "B_ViperHarness_oli_F",
     "B_ViperLightHarness_blk_F", "B_ViperLightHarness_khk_F", "B_ViperLightHarness_oli_F", "B_AssaultPack_wdl_F", "B_Carryall_green_F", "B_Carryall_wdl_F",
-    "B_FieldPack_green_F", "B_AssaultPack_eaf_F", "B_Carryall_eaf_F", "B_Carryall_taiga_F", "B_FieldPack_taiga_F", "B_SCBA_01_F", "B_CombinationUnitRespirator_01_F"
+    "B_FieldPack_green_F", "B_AssaultPack_eaf_F", "B_Carryall_eaf_F", "B_Carryall_taiga_F", "B_FieldPack_taiga_F", "B_SCBA_01_F", "B_CombinationUnitRespirator_01_F",
     // 3CB ---
     "UK3CB_BAF_B_Carryall_MTP", "UK3CB_BAF_B_Kitbag_MTP", "UK3CB_BAF_B_Kitbag_DDPM", "UK3CB_BAF_B_Carryall_DDPM", "UK3CB_BAF_B_Kitbag_TAN", "UK3CB_BAF_B_Carryall_TAN",
     "UK3CB_BAF_B_Kitbag_DPMW", "UK3CB_BAF_B_Carryall_DPMW", "UK3CB_BAF_B_Kitbag_OLI", "UK3CB_BAF_B_Carryall_OLI", "UK3CB_BAF_B_Kitbag_DPMT", "UK3CB_BAF_B_Carryall_DPMT",
@@ -583,7 +631,7 @@ InA_AllowedArsenal_backpacksRadio = [
     "B_RadioBag_01_tropic_F", "B_RadioBag_01_wdl_F",
     "B_RadioBag_01_eaf_F", "UK3CB_BAF_B_Bergen_MTP_Radio_H_A", 
     "UK3CB_BAF_B_Bergen_MTP_Radio_H_B", "UK3CB_BAF_B_Bergen_MTP_Radio_L_A", 
-    "UK3CB_BAF_B_Bergen_MTP_Radio_L_B",
+    "UK3CB_BAF_B_Bergen_MTP_Radio_L_B"
 ];
 
 
@@ -602,7 +650,7 @@ InA_AllowedArsenal_backpackMedic = [
     "UK3CB_BAF_B_Bergen_MTP_Medic_H_A", 
     "UK3CB_BAF_B_Bergen_MTP_Medic_H_B", 
     "UK3CB_BAF_B_Bergen_MTP_Medic_L_A", 
-    "UK3CB_BAF_B_Bergen_MTP_Medic_L_B",
+    "UK3CB_BAF_B_Bergen_MTP_Medic_L_B"
 ];
 
 
