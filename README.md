@@ -2,7 +2,7 @@
 
 This is the repository for the custom Invade & Annex Mission based on [AW's Invade & Annex](https://www.ahoyworld.net/).
 
-Made with ❤️ by FlyingThread, chicken_06 and Pew.
+Made with ❤️ by FlyingThread, chicken#6 (chargelol) and Pew.
 
 LEGAL
 Permission is hereby granted, free of charge, to any person obtaining 
