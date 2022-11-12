@@ -3,7 +3,9 @@
 //      MykeyRM [AW]      //
 ////////////////////////////
 
-sleep 10;
+// DISABLED BECAUSE WE ARE RUNNING ACE
+
+/* sleep 10;
 
 private _PlugsTakenHint  = "<t color='#ff9d00' size='1.3' shadow='1' shadowColor='#000000' align='center'>*** Earplugs received ***  </t>";   //Item taken hint.
 private _howtoHint = "<t  size='1' shadow='1' shadowColor='#000000' align='center'>   [Pause/Break] key to Insert and Remove </t>";          //Instructions hint.
@@ -33,4 +35,4 @@ InA_EarplugsEhIdx = (findDisplay 46) displayAddEventHandler ["KeyDown", {
             };
         };
     };
-}];
+}]; */
