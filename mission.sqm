@@ -16857,6 +16857,16 @@ class Mission
 						id=4953;
 						atlOffset=-0.00031471252;
 					};
+					class Item74
+					{
+						dataType="Marker";
+						position[]={5407.3848,34.291,15036.38};
+						name="sdm_air_service_1";
+						type="Empty";
+						angle=299.11798;
+						id=4952;
+						atlOffset=9.1552734e-005;
+					};
 					id=2097;
 					atlOffset=20.378662;
 				};
