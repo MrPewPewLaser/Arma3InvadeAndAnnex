@@ -47,6 +47,8 @@ switch (_vehKey) do {
     case "HELI_CAS": {
         _vehType = selectRandomWeighted [
             "O_Heli_Attack_02_dynamicLoadout_black_F", 1,
+            "UK3CB_BAF_Apache_AH1_Generic", 1,
+            "RHS_AH1Z",1,
             "B_Heli_Attack_01_dynamicLoadout_F", 2
         ];
 
@@ -57,6 +59,9 @@ switch (_vehKey) do {
         _vehType = selectRandomWeighted [
             "B_Heli_Light_01_dynamicLoadout_F", 2,
             "I_Heli_light_03_dynamicLoadout_F", 3,
+            "RHS_MELB_AH6M", 3,    
+            "rhs_uh1h_hidf_gunship", 2,  
+            "UK3CB_BAF_Wildcat_AH1_8_Armed", 2,                   
             "O_Heli_Light_02_dynamicLoadout_F", 1
         ];
 
@@ -68,7 +73,9 @@ switch (_vehKey) do {
         _vehType = selectRandomWeighted [
             "B_Heli_Transport_01_F", 2,
             "I_Heli_light_03_unarmed_F", 4,
-            "O_Heli_Light_02_unarmed_F", 1
+            "O_Heli_Light_02_unarmed_F", 1,
+            "UK3CB_BAF_Wildcat_HMA2_TRN_8A", 1,           
+            "rhs_uh1h_hidf_unarmed", 1            
         ];
 
         _typeDesc = "Heli (Medium)";
