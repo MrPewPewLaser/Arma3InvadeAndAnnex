@@ -67,8 +67,10 @@ InA_AllowedArsenal_generalItems = [
 
     "UK3CB_BAF_Silencer_L85", "UK3CB_BAF_Silencer_L110","UK3CB_BAF_Silencer_L115A3", "UK3CB_BAF_Silencer_L91A1",
 
+    // RKSL Attachments Pack 3.02c
+    "RKSL_optic_LDS", "RKSL_optic_LDS_C", "RKSL_optic_RMR_MS19", "RKSL_optic_RMR_MS19_FDE", "RKSL_optic_RMR_HG", "RKSL_optic_RMR_HG_FDE", "RKSL_optic_RMR_RM33", "RKSL_optic_RMR_RM33_FDE",
     "RKSL_optic_PMII_312", "RKSL_optic_PMII_312_sunshade", "RKSL_optic_PMII_312_wdl", "RKSL_optic_PMII_312_sunshade_wdl", "RKSL_optic_PMII_312_des", "RKSL_optic_PMII_312_sunshade_des",
-    "RKSL_optic_PMII_525", "RKSL_optic_PMII_525_wdl", "RKSL_optic_PMII_525_des"
+    "RKSL_optic_PMII_525", "RKSL_optic_PMII_525_wdl", "RKSL_optic_PMII_525_des", "RKSL_optic_EOT552", "RKSL_optic_EOT552_C", "RKSL_optic_EOT552X", "RKSL_optic_EOT552X_C"
 ];
 
 InA_AllowedArsenal_reconItems = [
