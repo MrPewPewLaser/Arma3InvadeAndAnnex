@@ -15618,7 +15618,7 @@ class Mission
 					markerType="ELLIPSE";
 					type="Empty";
 					colorName="ColorEAST";
-					fillName="FDiagonal";
+					fillName="SolidBorder";
 					a=750;
 					b=750;
 					id=155;
@@ -16254,7 +16254,7 @@ class Mission
 						class Item9
 						{
 							dataType="Marker";
-							position[]={5425.4658,34.124001,15058.525};
+							position[]={5418.934,34.124001,15049.075};
 							name="sdm_heli1";
 							type="Empty";
 							angle=131.85898;
@@ -16846,6 +16846,16 @@ class Mission
 							id=4548;
 							atlOffset=0.0017471313;
 						};
+					};
+					class Item73
+					{
+						dataType="Marker";
+						position[]={11555.664,22.745001,11802.823};
+						name="aac_air_service_1";
+						type="Empty";
+						angle=299.11798;
+						id=4953;
+						atlOffset=-0.00031471252;
 					};
 					id=2097;
 					atlOffset=20.378662;

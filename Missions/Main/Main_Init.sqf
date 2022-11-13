@@ -5,6 +5,7 @@
 
 InA_Server_mainAOUnits = [];
 InA_Server_subObjUnits = [];
+InA_Server_counterAttackUnits = [];
 InA_Server_currentAO = nil;
 InA_Server_manualAO = nil;
 InA_Server_MainAOShutdown = false;

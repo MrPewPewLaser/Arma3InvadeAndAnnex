@@ -649,7 +649,7 @@ _infantryMappings insert [
     ["#heli_pilots", ["rhs_pilot", "rhs_pilot_tan", "rhs_pilot_combat_heli", "rhs_pilot_transport_heli"]],
     ["#pilots", ["rhs_pilot"]],
     ["#repair", ["rhs_msv_emr_engineer"]],
-
+    ["#paras", ["rhs_msv_emr_RShG2", "rhs_msv_emr_rifleman", "rhs_msv_emr_grenadier", "rhs_msv_emr_LAT"]],
     ["#civs", ["C_man_1","C_man_polo_1_F_euro","C_man_polo_2_F_euro","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_6_F","C_man_shorts_4_F_asia"]]
 ];
 

@@ -206,7 +206,9 @@ class Altis {
             nameAlt = "FOB Martian";
 
             class ServicePads {
-                Air[] = {};
+                Air[] = {
+                    {"aac_air_service_1", {1, 1, 1}}
+                };
 
                 Ground[] = {
                     {"aac_ground_service_1", {1, 1, 1}}
