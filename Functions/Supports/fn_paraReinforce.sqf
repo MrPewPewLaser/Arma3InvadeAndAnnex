@@ -37,7 +37,7 @@ private _paraGrp = (createGroup _side);
 private _paraUnit = ["#paras", _factionHash] call AW_fnc_getUnitsFromHash;
 
 for "_i" from 1 to _squadSize do {
-    private _unit = (_paraGrp createUnit [_paraUnit, _startPos, [], 0, "NONE"]);
+    private _unit = (_paraGrp createUnit [(selectrandom _paraUnit), _startPos, [], 0, "NONE"]);
     _unit assignAsCargo _heli;
     _unit moveInCargo _heli;
 
