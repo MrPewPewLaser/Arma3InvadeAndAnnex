@@ -623,7 +623,7 @@ _factionMapping insert [
     ["#name", "Russia"],
     ["#side", east],
 	["#aux_factions", ["CSAT","AAF","CHDKZ", "FIA", "SYND"]],
-    ["#aux_faction_weights", [1, 1, 1.5, 1.5]],
+    ["#aux_faction_weights", [1, 1, 1, 1.5, 1.5]],
     ["#indep_factions", ["CSAT","AAF"]],
     ["#guer_factions", ["TLA"]]
 ];
@@ -725,8 +725,10 @@ _vehIFVs = [
 
 // AAs
 _vehSPAAs = [
-    "rhsgref_ins_zsu234",             2,
-    "rhs_zsu234_aa",                  2
+    "O_APC_Tracked_02_AA_F",    2,
+    "I_LT_01_AA_F",             0.5
+    "rhsgref_ins_zsu234",       2,
+    "rhs_zsu234_aa",            2
 ];
 
 // MBTs
@@ -735,7 +737,6 @@ _vehMBTs = [
     "rhsgref_ins_t72bc",    2,
 	"rhs_t14_tv",           2,
     "rhs_t80",              2
-
 ];
 
 // Helis
