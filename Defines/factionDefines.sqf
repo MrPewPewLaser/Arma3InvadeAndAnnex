@@ -622,9 +622,9 @@ _vehicleMappings = createHashMap;
 _factionMapping insert [
     ["#name", "Russia"],
     ["#side", east],
-	["#aux_factions", ["CSAT","CHDKZ", "FIA", "SYND"]],
+	["#aux_factions", ["CSAT","AAF","CHDKZ", "FIA", "SYND"]],
     ["#aux_faction_weights", [1, 1, 1.5, 1.5]],
-    ["#indep_factions", ["CSAT"]],
+    ["#indep_factions", ["CSAT","AAF"]],
     ["#guer_factions", ["TLA"]]
 ];
 
