@@ -46,6 +46,7 @@ class Altis {
             "HQ-Research",
             "MilitiaCamp",
             "PilotRescue",
+            "PilotRescue-Jet",
             "PoliceProtection",
             "Prototype-Tank",
             "SecureAsset",
