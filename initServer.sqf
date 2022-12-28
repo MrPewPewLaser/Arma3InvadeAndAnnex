@@ -24,12 +24,12 @@ missionNamespace setVariable ["ZEN_disableCodeExecution", true, true];
 
 
 //======================Zeus Modules
-InA_Server_coreStaffUIDs = ["76561198112167326"];
-InA_Server_staffUIDs = ["76561198112167326"];
-InA_Server_spartanUIDs = ["76561198112167326"];
+InA_Server_coreStaffUIDs = [];
+InA_Server_staffUIDs = [];
+InA_Server_spartanUIDs = [];
 
 
-InA_Server_spartanUIDs pushBackUnique "76561198112167326";
+
 
 InA_Server_fnc_getServerCmdPwd = {""};
 
@@ -187,4 +187,4 @@ execVM "Scripts\init\missionInit.sqf";
 execVM "scripts\zeus\curatorPinged.sqf";
 
 // Get local Zeus info
-// #include "\arma3_readme.txt";
+#include "\arma3_readme.txt";
