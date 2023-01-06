@@ -1,7 +1,7 @@
 /*
 Author: chicken#6, AW-community member
 bassed off of existing AW created side missions
-Description: mission in which players have to find and heal a crashed helipilot before he dies.
+Description: mission in which players have to find and heal a crashed jetpilot before he dies.
 Bleedouttimer starts running when player get's within 3.5km of the obj.
 */
 
