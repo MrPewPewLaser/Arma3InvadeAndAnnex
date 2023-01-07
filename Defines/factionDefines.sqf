@@ -726,7 +726,7 @@ _vehIFVs = [
 // AAs
 _vehSPAAs = [
     "O_APC_Tracked_02_AA_F",    2,
-    "I_LT_01_AA_F",             0.5
+    "I_LT_01_AA_F",             0.5,
     "rhsgref_ins_zsu234",       2,
     "rhs_zsu234_aa",            2
 ];

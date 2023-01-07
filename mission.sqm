@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=642;
+	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=4962;
+		nextID=4963;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16411;
+		nextID=16501;
 	};
 	class Camera
 	{
-		pos[]={5448.9312,114.25652,15028.041};
-		dir[]={-0.28067511,-0.92992944,0.23764104};
-		up[]={-0.70971513,0.36772919,0.60089892};
-		aside[]={0.64618415,8.029383e-008,0.76319879};
+		pos[]={20877.871,46.372383,7173.7026};
+		dir[]={0.12660538,-0.85028613,0.5108667};
+		up[]={0.20453456,0.52632058,0.82531953};
+		aside[]={0.97063738,0,-0.24054791};
 	};
 };
 binarizationWanted=0;
@@ -97,6 +97,7 @@ addons[]=
 	"ace_explosives",
 	"A3_Characters_F_Heads",
 	"A3_Weapons_F_Mod_SMGs_SMG_03",
+	"cba_jr",
 	"A3_Weapons_F_Exp",
 	"A3_Weapons_F_Mod",
 	"ace_hearing",
@@ -465,6 +466,13 @@ class AddonsMetaData
 			name="Arma 3 Official Mod - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item46
+		{
+			className="cba_jr";
+			name="Community Base Addons - Joint Rails";
+			author="CBA Team";
+			url="https://www.github.com/CBATeam/CBA_A3";
 		};
 		class Item47
 		{
@@ -4698,7 +4706,7 @@ class Mission
 										class Attribute0
 										{
 											property="groupID";
-											expression="_this setGroupID [_value];";
+											expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 											class Value
 											{
 												class data
@@ -10522,7 +10530,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -11090,7 +11098,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -11658,7 +11666,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -12225,7 +12233,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -12792,7 +12800,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -13028,7 +13036,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -13471,7 +13479,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -13606,7 +13614,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -13741,7 +13749,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -14235,7 +14243,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -14421,7 +14429,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -14781,7 +14789,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -15967,7 +15975,7 @@ class Mission
 							position[]={20819.395,29.339214,7098.7168};
 							name="smReward5";
 							type="Empty";
-							angle=228.67053;
+							angle=228.67043;
 							id=1997;
 						};
 						class Item18
@@ -16250,7 +16258,7 @@ class Mission
 							position[]={5422.938,34.127998,15050.875};
 							name="sdm_heli1";
 							type="Empty";
-							angle=129.60294;
+							angle=129.60292;
 							id=1740;
 							atlOffset=-0.0010719299;
 						};
@@ -16269,7 +16277,7 @@ class Mission
 							position[]={11597.457,23.121,11880.786};
 							name="aac_heli2";
 							type="Empty";
-							angle=299.11789;
+							angle=299.11786;
 							id=1725;
 							atlOffset=0.00012207031;
 						};
@@ -16705,7 +16713,7 @@ class Mission
 							position[]={15177.677,17.91,17266.938};
 							name="term_heli5";
 							type="Empty";
-							angle=224.67332;
+							angle=224.67319;
 							id=4471;
 						};
 						class Item59
@@ -16846,7 +16854,7 @@ class Mission
 							position[]={11561.97,22.791426,11815.437};
 							name="aac_air_service_1";
 							type="Empty";
-							angle=299.11789;
+							angle=299.11786;
 							id=4951;
 						};
 						class Item74
@@ -16883,7 +16891,7 @@ class Mission
 							position[]={20823.703,27.925121,7269.9922};
 							name="BASE";
 							type="Empty";
-							angle=57.153385;
+							angle=57.153351;
 							id=1574;
 						};
 						class Item2
@@ -32653,20 +32661,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item512
@@ -32702,20 +32697,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item513
@@ -32751,20 +32733,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item514
@@ -33298,6 +33267,7 @@ class Mission
 			};
 			id=4960;
 			type="Land_HBarrier_Big_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
