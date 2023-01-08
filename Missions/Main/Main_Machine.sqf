@@ -13,7 +13,7 @@ while {InA_Server_missionActive} do {
     };
 
     "aoCircle" setMarkerSize [InA_Server_MainAOSize, InA_Server_MainAOSize];
-    "aoCircle" setMarkerAlpha 0.5;
+
     InA_Server_mainAoSpawnCompleted = false;
 
     if (isNil "InA_Server_currentAO") then {
@@ -38,7 +38,7 @@ while {InA_Server_missionActive} do {
     private _factionHash = InA_EnemyFactionHash;
 	
     if ((toLower worldName) == "altis") then {
-        private _faction = (selectRandomWeighted ["Russia", 1, "SAF", 0.35]);
+        private _faction = (selectRandomWeighted ["RUSSIA", 1, "SAF", 0.35]);
 
         _factionHash = (InA_FactionMappings get _faction);
     };
