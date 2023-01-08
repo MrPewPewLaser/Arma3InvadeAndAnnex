@@ -43,6 +43,13 @@ class PlayerFaction {
     default = 0;
 };
 
+class EnemyFaction {
+    title = "Enemy faction, defines enemy units, groups and vehicles";
+    values[] = FACTION_VALUES;
+    texts[] = FACTION_TEXTS;
+    default = 7;
+};
+
 class MissionSpawnRange {
     title = "Minimum distance from an AO/F.O.B/Base that a mission can spawn";
     values[] = {1500, 2500, 3000, 4000, 5000, 7500};

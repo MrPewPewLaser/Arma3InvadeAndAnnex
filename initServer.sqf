@@ -10,28 +10,24 @@ Edited by:
 Description:	Things that may run on the server.
 */
 
+
 if (!hasInterface) then {
     enableEnvironment false;
 };
 
 // Ares / Achilles / ZEN
-missionNamespace setVariable ["Ares_Allow_Zeus_To_Execute_Code", true, true];
+missionNamespace setVariable ["Ares_Allow_Zeus_To_Execute_Code", false, true];
 missionNamespace setVariable ["ZEN_disableCodeExecution", true, true];
 
 
 //BIS Dynamic Groups:
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
-
 //======================Zeus Modules
 InA_Server_coreStaffUIDs = [];
 InA_Server_staffUIDs = [];
 InA_Server_spartanUIDs = [];
 
-
-
-
-InA_Server_fnc_getServerCmdPwd = {""};
 
 /*
     Pilot airframe limiter
@@ -41,15 +37,15 @@ InA_Server_fnc_getServerCmdPwd = {""};
 // Airframe limit over InA_Server_PilotAirframeLimitPeriod
 InA_Server_PilotAirframeLimit = 4;
 // Period over which InA_Server_PilotAirframeLimit will be counted
-InA_Server_PilotAirframeLimitPeriod = (InA_Server_PilotAirframeLimit * 900);
+InA_Server_PilotAirframeLimitPeriod = ((InA_Server_PilotAirframeLimit * 15) * 60);
 
 // Airframe limit over InA_Server_PilotAirframeLimitPeriodShort
 InA_Server_PilotAirframeLimitLow  = 3;
 // Period over which InA_Server_PilotAirframeLimitLow will be counted
-InA_Server_PilotAirframeLimitPeriodShort = (InA_Server_PilotAirframeLimitLow * 600);
+InA_Server_PilotAirframeLimitPeriodShort = ((InA_Server_PilotAirframeLimitLow * 10) * 60);
 
 // Period to ground a pilot
-InA_Server_PilotAirframeTimeout = 3600;
+InA_Server_PilotAirframeTimeout = (60 * 60);
 
 InA_Server_PilotAirframeTimers = createHashMap;
 InA_Server_PilotAirframeCounters = createHashMap;
@@ -65,35 +61,6 @@ InA_Server_adminChannelID = radioChannelCreate [[0.8, 0, 0, 1], "Admin Channel",
 [Quartermaster, "Steve"] remoteExec ["setName", 0, true];
 
 adminLogged setVariable ["showNotification", false, true];
-
-
-// Factions
-0 = [] spawn {
-    0 =  execVM "Defines\factionDefines.sqf";
-
-    waitUntil {!isNil "InA_FactionMappingsDefined" && {InA_FactionMappingsDefined}};
-
-    private _factions = [];
-
-    switch (toLower worldName) do {
-        case "altis": {
-            _factions = ["Russia"];
-        };
-
-        case "cam_lao_nam": {
-            _factions = ["PAVN"];
-        };
-
-        default {
-            _factions = ["Russia"];
-        };
-    };
-
-    InA_EnemyFaction = (selectRandom _factions);
-
-    InA_EnemyFactionHash = (InA_FactionMappings get InA_EnemyFaction);
-};
-
 
 // Mission eventhandlers
 addMissionEventHandler ["PlayerConnected", {
@@ -182,9 +149,10 @@ addMissionEventHandler ["HandleDisconnect", {
 
 
 // Let's get started ....
+execVM "Defines\factionDefines.sqf";
 execVM "Scripts\init\missionInit.sqf";
-
 execVM "scripts\zeus\curatorPinged.sqf";
 
 // Get local Zeus info
 #include "\arma3_readme.txt";
+

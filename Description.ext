@@ -142,6 +142,7 @@ class CfgDiscordRichPresence {
 
 
 //------------------------- Parameters
+#include "Defines\factionMacros.hpp"
 class Params {
     #include "params.hpp"
 };

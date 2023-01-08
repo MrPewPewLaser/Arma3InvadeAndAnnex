@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=4963;
+		nextID=4962;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16501;
+		nextID=16471;
 	};
 	class Camera
 	{
-		pos[]={20877.871,46.372383,7173.7026};
-		dir[]={0.12660538,-0.85028613,0.5108667};
-		up[]={0.20453456,0.52632058,0.82531953};
-		aside[]={0.97063738,0,-0.24054791};
+		pos[]={20880.742,41.22995,7176.7334};
+		dir[]={0.28368649,-0.86357391,0.41684809};
+		up[]={0.48586541,0.5042221,0.71392918};
+		aside[]={0.82671463,0,-0.56262171};
 	};
 };
 binarizationWanted=0;
@@ -15613,17 +15613,18 @@ class Mission
 				class Item1
 				{
 					dataType="Marker";
-					position[]={-12660.69,14.073955,733.46619};
+					position[]={-12660.69,14.074,733.466};
 					name="aoCircle";
 					markerType="ELLIPSE";
 					type="Empty";
 					colorName="ColorEAST";
+					alpha=0.50281334;
 					fillName="SolidBorder";
 					a=750;
 					b=750;
 					drawBorder=1;
 					id=155;
-					atlOffset=200.04396;
+					atlOffset=200.04401;
 				};
 				class Item2
 				{
@@ -15975,7 +15976,7 @@ class Mission
 							position[]={20819.395,29.339214,7098.7168};
 							name="smReward5";
 							type="Empty";
-							angle=228.67043;
+							angle=228.67046;
 							id=1997;
 						};
 						class Item18
@@ -16713,7 +16714,7 @@ class Mission
 							position[]={15177.677,17.91,17266.938};
 							name="term_heli5";
 							type="Empty";
-							angle=224.67319;
+							angle=224.67325;
 							id=4471;
 						};
 						class Item59
@@ -16891,7 +16892,7 @@ class Mission
 							position[]={20823.703,27.925121,7269.9922};
 							name="BASE";
 							type="Empty";
-							angle=57.153351;
+							angle=57.153366;
 							id=1574;
 						};
 						class Item2
@@ -32661,7 +32662,20 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item512
@@ -32697,7 +32711,20 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item513
@@ -32733,7 +32760,20 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute1
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 		class Item514
